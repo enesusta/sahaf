@@ -2,7 +2,7 @@ import React, {useState, useContext} from "react";
 import {useHistory} from "react-router-dom";
 import axios from "axios";
 import {AuthContext} from "../../context/auth/AuthContext";
-import { LoginButton, LoginLabel , LoginInput, LoginForm, LoginWrapper } from "./styles/AuthStyles";
+import { LoginButton, LoginLabel , LoginInput, LoginForm, LoginWrapper } from "./styles/LoginStyles";
 
 const Login = () => {
     const [authUser, setAuthUser] = useState({username: "", user_pwd: ""});
@@ -19,7 +19,9 @@ const Login = () => {
 
     const clickHandler = () => {
 
-        const url = `${process.env.REACT_APP_API}/login`;
+    //    const url = `${process.env.REACT_APP_API}/login`;
+
+        console.log(authUser)
 
         /**
         axios
@@ -45,7 +47,7 @@ const Login = () => {
                 <LoginLabel>Kullanıcı Adı</LoginLabel>
                 <LoginInput type="text" value={authUser.username} onChange={usernameHandler}/>
                 <LoginLabel>Şifre</LoginLabel>
-                <LoginInput type="text" value={authUser.user_pwd} onChange={passcodeHandler}/>
+                <LoginInput type="password" value={authUser.user_pwd} onChange={passcodeHandler}/>
             </LoginForm>
             <LoginButton onClick={clickHandler}>Login</LoginButton>
         </LoginWrapper>

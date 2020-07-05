@@ -27,6 +27,11 @@ const LoginLabel = styled.label`
   display: flex;
   justify-content: center;
   padding: 0.5em;
+  
+  @media only screen and (max-width: 768px) {
+   justify-content: start;
+  }
+  
 `;
 
 const LoginInput = styled.input`
@@ -48,6 +53,11 @@ const LoginButton = styled.button`
     &:hover {
       background-color: hotpink;
     }
+    
+     @media only screen and (max-width: 768px) {
+      width: 80%;
+    }
+    
 `;
 
 
