@@ -4,15 +4,18 @@ import com.github.enesusta.sahaf.book.Book;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 @Document
 @Data
 public class Author {
 
+    @Indexed(unique = true)
     private String fullName;
     private String literaryMovement;
     private short birthday;
