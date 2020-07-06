@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
         <div className="section">
             <header className="navbar">
-                <div className="navbar-header">Orthorecta</div>
+                <div className="navbar-header">Sahaf Sepeti</div>
                 <button href="#" className="navbar-toggle" onClick={burgerClickHandler}>
                     <img src={click ? burger : close} alt="" />
                 </button>
@@ -32,10 +32,9 @@ const Navbar = () => {
                     <Link to="/projects">
                         <button className="navbar-link">Projects</button>
                     </Link>
-                    <Link to="/about">
-                        <button className="navbar-link">About</button>
+                    <Link to="/profile">
+                        <button className="navbar-link">Profilim</button>
                     </Link>
-                    isAuth {isAuth}
                     {isAuth ? <SignOut /> : <SignIn />}
                 </nav>
             </header>

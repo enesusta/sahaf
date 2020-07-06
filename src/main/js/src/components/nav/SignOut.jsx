@@ -15,7 +15,7 @@ const SignOut = () => {
     return (
         <div className="">
             <a className="navbar-buttom">
-                <button onClick={logoutHandler}>Logout</button>
+                <button onClick={logoutHandler}>Çıkış Yap</button>
             </a>
         </div>
     )
