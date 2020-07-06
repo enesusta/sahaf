@@ -2,6 +2,9 @@ package com.github.enesusta.sahaf.author;
 
 import com.github.enesusta.sahaf.book.Book;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -12,14 +15,16 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Document
-@Data
+@Getter
+@Setter
+@ToString
 public class Author {
 
     @Indexed(unique = true)
     private String fullName;
     private String literaryMovement;
     private short birthday;
-    private Set<Book> books;
+    private Set<Book> books = new HashSet<>();
 
     @CreatedDate
     private Date createdDate;
