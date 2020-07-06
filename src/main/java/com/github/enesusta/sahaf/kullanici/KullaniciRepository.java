@@ -1,4 +1,4 @@
-package com.github.enesusta.mongoproject.kullanici;
+package com.github.enesusta.sahaf.kullanici;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
