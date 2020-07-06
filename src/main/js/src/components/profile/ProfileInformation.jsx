@@ -1,9 +1,27 @@
 import React from 'react';
+import styled from 'styled-components';
+import {
+    ProfileTabForm,
+    ProfileTabHeader,
+    ProfileTabInput,
+    ProfileTabWrapper
+} from "./styles/ProfileStyles";
+
+
+
 
 const ProfileInformation = () => {
 
     return (
-        <li>information</li>
+        <ProfileTabWrapper>
+            <ProfileTabHeader>Üyelik Bilgilerim</ProfileTabHeader>
+            <ProfileTabForm>
+                <ProfileTabInput/>
+                <ProfileTabInput/>
+                <ProfileTabInput/>
+                <ProfileTabInput/>
+            </ProfileTabForm>
+        </ProfileTabWrapper>
     )
 };
 
