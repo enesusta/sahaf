@@ -1,10 +1,20 @@
 import React from 'react';
+import {ProfileTabHeader, ProfileTabForm, ProfileTabInput, ProfileTabWrapper} from "./styles/ProfileStyles";
 
-const ProfileAddress = () => {
 
-    return <li>
-        address
-    </li>
+const ProfileInformation = () => {
+
+    return (
+        <ProfileTabWrapper>
+            <ProfileTabHeader>Adres Defterim</ProfileTabHeader>
+            <ProfileTabForm>
+                <ProfileTabInput/>
+                <ProfileTabInput/>
+                <ProfileTabInput/>
+                <ProfileTabInput/>
+            </ProfileTabForm>
+        </ProfileTabWrapper>
+    )
 };
 
-export default ProfileAddress;
+export default ProfileInformation;
