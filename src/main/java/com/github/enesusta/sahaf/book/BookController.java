@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @RestController
@@ -26,7 +27,9 @@ public class BookController {
     public void save(@RequestBody Book book) {
         final Query findByNameQuery = Query.query(Criteria.where("fullName").is(book.getAuthor()));
         final Author author = mongoTemplate.findOne(findByNameQuery, Author.class);
-        final Set<Book> books = author.getBooks();
+        Set<Book> books = author.getBooks();
+
+        if (books == null) books = new HashSet<>();
 
         books.add(book);
         final Update update = new Update();
