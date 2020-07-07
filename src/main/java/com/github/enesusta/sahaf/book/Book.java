@@ -1,28 +1,24 @@
-package com.github.enesusta.mongoproject.kullanici;
+package com.github.enesusta.sahaf.book;
 
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
-import java.util.List;
-import java.util.Map;
 
 @Document
 @Data
-public class Kullanici {
+public class Book {
 
-    private String ad;
-    private String soyad;
-    private Map ozellikleri;
-    private List<UserIP> ipList;
+    private String author;
+    private String isbn;
+    private String title;
+    private short pages;
 
     @CreatedDate
     private Date createdDate;
 
     @LastModifiedDate
     private Date lastModifiedDate;
-
 }

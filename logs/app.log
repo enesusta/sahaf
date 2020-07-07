@@ -1,0 +1,80 @@
+2020-07-07 00:46:58,032 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 10724 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 00:46:58,037 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 00:47:05,129 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 8.192 seconds (JVM running for 11.233)
+2020-07-07 00:48:04,612 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 6616 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 00:48:04,626 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 00:48:08,561 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.851 seconds (JVM running for 6.443)
+2020-07-07 00:48:21,989 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-4] An request has been come
+2020-07-07 00:50:57,323 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-6] An request has been come
+2020-07-07 00:52:19,766 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 5684 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 00:52:19,769 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 00:52:23,657 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.517 seconds (JVM running for 6.107)
+2020-07-07 00:52:27,718 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-2] query is Enes Usta
+2020-07-07 00:55:51,477 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 13120 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 00:55:51,490 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 00:55:55,424 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.762 seconds (JVM running for 6.665)
+2020-07-07 00:55:56,899 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-2] query is Enes Usta
+2020-07-07 00:59:13,532 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 7760 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 00:59:13,541 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 00:59:17,326 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.759 seconds (JVM running for 6.391)
+2020-07-07 01:01:13,116 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 11724 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:01:13,121 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:01:17,078 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.656 seconds (JVM running for 6.318)
+2020-07-07 01:05:27,691 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-5] An request has been come
+2020-07-07 01:08:16,967 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 7656 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:08:16,971 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:08:21,000 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.679 seconds (JVM running for 5.936)
+2020-07-07 01:08:22,932 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-3] An request has been come
+2020-07-07 01:08:36,482 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-2] An request has been come
+2020-07-07 01:11:33,122 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 9356 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:11:33,129 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:11:37,183 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.704 seconds (JVM running for 6.001)
+2020-07-07 01:11:38,874 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-2] An request has been come
+2020-07-07 01:11:39,009 ERROR com.github.enesusta.sahaf.author.AuthorControllerAdvice [http-nio-8080-exec-2] E11000 duplicate key error collection: mongo-rest.author index: fullName dup key: { fullName: "Enes Usta" }
+2020-07-07 01:11:41,666 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-3] An request has been come
+2020-07-07 01:11:41,683 ERROR com.github.enesusta.sahaf.author.AuthorControllerAdvice [http-nio-8080-exec-3] E11000 duplicate key error collection: mongo-rest.author index: fullName dup key: { fullName: "Enes Usta" }
+2020-07-07 01:18:02,870 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 11652 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:18:02,874 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:18:08,361 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 6.244 seconds (JVM running for 7.679)
+2020-07-07 01:18:08,567 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 15172 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:18:08,572 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:18:21,149 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 11940 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:18:21,153 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:18:24,628 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.118 seconds (JVM running for 5.407)
+2020-07-07 01:18:30,901 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-1] An request has been come
+2020-07-07 01:18:31,068 ERROR com.github.enesusta.sahaf.author.AuthorControllerAdvice [http-nio-8080-exec-1] E11000 duplicate key error collection: mongo-rest.author index: fullName dup key: { fullName: "Enes Usta" }
+2020-07-07 01:34:06,499 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 8200 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:34:06,504 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:34:10,515 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.61 seconds (JVM running for 5.893)
+2020-07-07 01:37:05,434 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 1016 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:37:05,446 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:37:09,351 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.748 seconds (JVM running for 6.427)
+2020-07-07 01:37:11,215 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-1] An request has been come
+2020-07-07 01:38:02,545 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 248 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:38:02,548 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:38:06,305 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.35 seconds (JVM running for 5.781)
+2020-07-07 01:39:02,867 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 7964 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:39:02,871 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:39:06,721 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.524 seconds (JVM running for 5.776)
+2020-07-07 01:40:35,380 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 7300 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:40:35,385 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:40:38,947 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.171 seconds (JVM running for 5.418)
+2020-07-07 01:40:57,640 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 14168 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:40:57,645 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:41:01,323 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.28 seconds (JVM running for 5.625)
+2020-07-07 01:41:03,082 INFO com.github.enesusta.sahaf.book.BookController [http-nio-8080-exec-2] Author is null
+2020-07-07 01:41:38,068 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 13488 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:41:38,072 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:41:41,830 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 4.372 seconds (JVM running for 5.702)
+2020-07-07 01:41:43,403 INFO com.github.enesusta.sahaf.book.BookController [http-nio-8080-exec-2] new book added!
+2020-07-07 01:42:02,784 INFO com.github.enesusta.sahaf.book.BookController [http-nio-8080-exec-3] new book added!
+2020-07-07 01:43:39,623 INFO com.github.enesusta.sahaf.book.BookController [http-nio-8080-exec-5] new book added!
+2020-07-07 01:44:22,301 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 1248 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-07 01:44:22,305 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-07 01:44:26,804 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 5.18 seconds (JVM running for 6.521)
+2020-07-07 01:44:27,189 INFO com.github.enesusta.sahaf.book.BookController [http-nio-8080-exec-1] books: [Book(author=Enes Usta, isbn=13213122, title=Davam, pages=265, createdDate=null, lastModifiedDate=null)]
+2020-07-07 01:44:27,320 INFO com.github.enesusta.sahaf.book.BookController [http-nio-8080-exec-1] new book added!
+2020-07-07 01:44:30,478 INFO com.github.enesusta.sahaf.book.BookController [http-nio-8080-exec-3] books: [Book(author=Enes Usta, isbn=13213122, title=Davam, pages=265, createdDate=null, lastModifiedDate=null)]
+2020-07-07 01:44:30,492 INFO com.github.enesusta.sahaf.book.BookController [http-nio-8080-exec-3] new book added!
+2020-07-07 01:45:05,105 INFO com.github.enesusta.sahaf.book.BookController [http-nio-8080-exec-7] books: [Book(author=Enes Usta, isbn=13213122, title=Davam, pages=265, createdDate=null, lastModifiedDate=null)]
+2020-07-07 01:45:05,116 INFO com.github.enesusta.sahaf.book.BookController [http-nio-8080-exec-7] new book added!

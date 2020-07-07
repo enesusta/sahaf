@@ -1,4 +1,4 @@
-package com.github.enesusta.mongoproject;
+package com.github.enesusta.sahaf;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
