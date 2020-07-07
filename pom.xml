@@ -8,10 +8,10 @@
         <version>2.2.8.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.github.enesusta.mongoproject</groupId>
-    <artifactId>mongo-project</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>mongo-project</name>
+    <groupId>com.github.enesusta.sahaf</groupId>
+    <artifactId>sahaf</artifactId>
+    <version>1.0.3</version>
+    <name>sahaf</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

@@ -30,6 +30,8 @@ build/
 ### VS Code ###
 .vscode/
 
+## credentials ##
+src/main/resources/application.yml
 
 ### Frontend ###
 src/main/js/node_modules
