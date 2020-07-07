@@ -3,5 +3,5 @@ package com.github.enesusta.sahaf.authentication.cache;
 import com.github.enesusta.sahaf.author.Author;
 
 public interface AuthenticationCacheService {
-    Author getCache(String username);
+    Author get(String username);
 }
