@@ -8,5 +8,4 @@ import java.util.function.Supplier;
 
 public interface AuthorService {
     Supplier<Author> findByFullName(String fullName);
-    Supplier<Boolean> changePassword(PasswordChangeRequest passwordChangeRequest);
 }

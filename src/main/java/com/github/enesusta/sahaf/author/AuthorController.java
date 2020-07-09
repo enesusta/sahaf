@@ -35,8 +35,9 @@ public class AuthorController {
 
     @PutMapping
     public final CompletableFuture<Boolean> changePassword(@RequestBody PasswordChangeRequest passwordChangeRequest) {
-        final Supplier<Boolean> changeSupplier = authorService.changePassword(passwordChangeRequest);
-        return CompletableFuture.supplyAsync(changeSupplier);
+        //       final Supplier<Boolean> changeSupplier = authorService.changePassword(passwordChangeRequest);
+        return null;
+//        return CompletableFuture.supplyAsync(changeSupplier);
     }
 
     @GetMapping("/all")

@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import ProfileSelector from "./ProfileSelector";
 import ProfileInformation from "./ProfileInformation";
-import ProfileAddress from "./ProfileAddress";
-import ProfilePasswordChanger from "./ProfilePasswordChanger";
 
 
 const Wrapper = styled.section`
@@ -19,8 +17,6 @@ const Profile = () => {
 
     const profileMap = new Map();
     profileMap.set(1, <ProfileInformation/>);
-    profileMap.set(2, <ProfileAddress/>);
-    profileMap.set(3, <ProfilePasswordChanger/>);
 
     return (
         <Wrapper>

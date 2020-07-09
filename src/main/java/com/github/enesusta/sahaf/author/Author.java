@@ -33,10 +33,10 @@ public class Author {
      * erişimini kısıtlayabilir.
      */
 
-    private Set<String> authorRoles = Set.of("BOOK_WRITE", "BOOK_READ");
+    private Set<String> roles = Set.of("BOOK_WRITE", "BOOK_READ");
 
 
-    private String literaryMovement;
+    private String literary;
 
     private short birthday;
 
