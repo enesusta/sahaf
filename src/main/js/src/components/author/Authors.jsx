@@ -1,14 +1,25 @@
 import React from 'react';
 import {useAuthFetch} from "kanca/http";
+import {AuthorsWrapper} from "./styles/AuthorStyles";
+import {Facebook} from "react-content-loader";
+import AuthorsShowCase from "./AuthorsShowcase";
 
 const Authors = () => {
     const {data, isLoading, error} = useAuthFetch('/author/all')
 
-    if (isLoading)
-        return <li>is loading</li>
+
+    if (isLoading) {
+        return <Facebook/>
+    }
 
     return (
-        <li>{JSON.stringify(data)}</li>
+        <AuthorsWrapper>
+            {
+                data.map((e, i) => {
+                    return <AuthorsShowCase key={i} author={e}/>
+                })
+            }
+        </AuthorsWrapper>
     )
 
 };

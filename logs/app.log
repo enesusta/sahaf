@@ -362,3 +362,50 @@
 2020-07-10 02:03:57,470 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 16856 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
 2020-07-10 02:03:57,475 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
 2020-07-10 02:04:02,232 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 5.343 seconds (JVM running for 6.809)
+2020-07-10 02:07:15,878 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-8] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:07:17,585 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-9] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:07:27,602 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-1] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:07:35,563 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-3] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:07:43,355 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-5] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:07:45,085 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-6] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:07:49,843 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-8] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:07:52,942 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-9] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:09:03,153 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-3] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:09:26,813 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-6] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:09:42,176 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-9] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:10:14,159 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-2] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:14:10,420 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-5] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:14:31,396 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-8] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:14:40,830 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-1] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:15:14,881 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-4] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:15:37,724 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-7] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:17:25,951 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-10] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:17:43,222 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-3] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:17:56,277 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-6] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:18:03,889 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-10] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:18:18,037 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-3] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:18:26,761 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-7] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:18:52,249 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-1] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:19:19,870 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-5] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:20:26,284 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-8] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:20:31,186 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-9] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:21:04,723 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-2] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:21:07,101 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-4] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:21:55,015 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 14248 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-10 02:21:55,020 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-10 02:22:00,582 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 6.264 seconds (JVM running for 8.127)
+2020-07-10 02:22:04,191 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-2] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:22:09,778 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-5] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:22:17,727 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-8] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:23:14,483 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-1] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:23:29,284 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-4] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:23:41,676 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-7] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:23:57,351 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-10] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:24:20,866 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-3] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:24:22,994 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-5] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:24:24,156 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-6] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:24:27,969 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-8] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:24:31,993 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-1] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:24:34,963 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-3] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:24:37,516 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-7] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-10 02:24:39,219 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-8] JWT strings must contain exactly 2 period characters. Found: 0
