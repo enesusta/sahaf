@@ -1,5 +1,6 @@
 package com.github.enesusta.sahaf.author;
 
+import com.github.enesusta.sahaf.author.dto.AuthorDTO;
 import com.github.enesusta.sahaf.author.repository.AuthorRepository;
 import com.github.enesusta.sahaf.author.service.AuthorService;
 import com.github.enesusta.sahaf.change.PasswordChangeRequest;
@@ -24,7 +25,6 @@ import java.util.function.Supplier;
 @Slf4j
 public class AuthorController {
 
-    private final AuthorRepository authorRepository;
     private final AuthorService authorService;
 
     @GetMapping
@@ -47,8 +47,8 @@ public class AuthorController {
     }
 
     @GetMapping("/all")
-    public final List<Author> getAll() {
-        return authorRepository.findAllByQuery();
+    public final CompletableFuture<List<AuthorDTO>> getAll() {
+        return CompletableFuture.supplyAsync(authorService.getAll());
     }
 
 

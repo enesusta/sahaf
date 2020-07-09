@@ -1,6 +1,8 @@
 package com.github.enesusta.sahaf.author.service;
 
 import com.github.enesusta.sahaf.author.Author;
+import com.github.enesusta.sahaf.author.dto.AuthorDTO;
+import com.github.enesusta.sahaf.author.repository.AuthorRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -8,6 +10,8 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Supplier;
 
 @Service
@@ -16,6 +20,7 @@ import java.util.function.Supplier;
 public class DefaultAuthorService implements AuthorService {
 
     private final MongoTemplate mongoTemplate;
+    private final AuthorRepository authorRepository;
 
     @Override
     public Supplier<Author> findByFullName(final String fullName) {
@@ -35,6 +40,27 @@ public class DefaultAuthorService implements AuthorService {
         temp.setLiterary(author.getLiterary());
         temp.setBirthday(author.getBirthday());
         return () -> temp;
+    }
+
+    @Override
+    public Supplier<List<AuthorDTO>> getAll() {
+
+
+        final List<Author> current = authorRepository.findAll();
+        final List<AuthorDTO> authors = new ArrayList<>(32);
+
+        current.forEach(e -> {
+
+            AuthorDTO author = new AuthorDTO();
+            author.setFullName(e.getFullName());
+            author.setBirthday(e.getBirthday());
+            author.setBooks(e.getBooks());
+            author.setLiterary(e.getLiterary());
+            authors.add(author);
+
+        });
+
+        return () -> authors;
     }
 
 

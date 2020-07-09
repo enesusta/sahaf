@@ -6614,10 +6614,10 @@ jsx-ast-utils@^2.2.1, jsx-ast-utils@^2.2.3:
     array-includes "^3.0.3"
     object.assign "^4.1.0"
 
-kanca@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/kanca/-/kanca-1.0.8.tgz#bd22f8bae08b1f93270087171c6b356f2137b05f"
-  integrity sha512-5XdPPXk0pft5XSnRQY5/uUDs1eY5+0blyzWOXHxObFOWYz9/rwf08ZZLn211ll8+birVMx8QYsR2OX8XorKN4w==
+kanca@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/kanca/-/kanca-1.0.9.tgz#91bfdb3b08c367a322d2751eec71c8adfe2ae9c8"
+  integrity sha512-6CqocZDAFF7Libkf4u00TS+auZiDr0bs/8fia85sbuaDqSmRL3shkuKn6fazch1o20dyaAJW9LaDJNYJYZ1WpA==
   dependencies:
     env-cmd "^10.1.0"
 
