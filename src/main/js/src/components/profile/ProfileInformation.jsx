@@ -9,7 +9,6 @@ import {
 import {useAuthFetch} from "kanca/http";
 import {Facebook} from 'react-content-loader'
 import {LoginButton} from '../auth/styles/LoginStyles'
-import axios from 'axios';
 
 
 const ProfileInformation = () => {
