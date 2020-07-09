@@ -18,7 +18,7 @@ public class JsonWebTokenConfiguration {
 
     @Bean
     public JsonWebTokenManager jsonWebTokenManager() {
-        return new JsonWebTokenManager(secretKey, Integer.parseInt(validity));
+        return new JsonWebTokenManager(secretKey, 1000 * 60 * 60);
     }
 
 }
