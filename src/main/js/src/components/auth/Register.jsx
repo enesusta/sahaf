@@ -1,35 +1,51 @@
-import React, {useState, useContext} from "react";
+import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import axios from "axios";
-import {AuthContext} from "../../context/auth/AuthContext";
 import {LoginButton, LoginLabel, LoginInput, LoginForm, LoginWrapper} from "./styles/LoginStyles";
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Login = () => {
-    const [authUser, setAuthUser] = useState({fullName: "", password: ""});
+const initialObject = {
+    fullName: "",
+    password: "",
+    literaryMovement: "",
+    birthday: "",
+}
+
+const Register = () => {
+    const [register, setRegister] = useState(initialObject);
     const history = useHistory();
-    const isAuth = useContext(AuthContext);
 
-    const usernameHandler = e => {
-        setAuthUser({...authUser, fullName: e.target.value});
+    const nameHandler = e => {
+        setRegister({...register, fullName: e.target.value});
     };
 
-    const passcodeHandler = e => {
-        setAuthUser({...authUser, password: e.target.value});
+    const passwordHandler = e => {
+        setRegister({...register, password: e.target.value});
     };
+
+    const notify = () => toast.success('Kayıt işlemi başarılı!', {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
 
     const clickHandler = () => {
 
         const url = `${process.env.REACT_APP_API}/auth/register`;
 
         axios
-            .post(url, authUser)
+            .post(url, register)
             .then(res => {
                 if (res.status === 200) {
-                    localStorage.setItem('token', res.data);
-                    localStorage.setItem('isLogged', true);
-                    localStorage.setItem('user', authUser.fullName);
-                    isAuth.updateIsAuth(true);
-                    history.push("/login");
+                    notify();
+                    setTimeout(() => {
+                        history.push("/login");
+                    }, 2000);
                 }
             })
             .catch(err => {
@@ -41,14 +57,21 @@ const Login = () => {
         <LoginWrapper>
             <h3>Kayıt olun!</h3>
             <LoginForm>
-                <LoginLabel>Kullanıcı Adı</LoginLabel>
-                <LoginInput type="text" value={authUser.fullName} onChange={usernameHandler}/>
-                <LoginLabel>Şifre</LoginLabel>
-                <LoginInput type="password" value={authUser.password} onChange={passcodeHandler}/>
+                <LoginLabel>Yazar Ismi</LoginLabel>
+                <LoginInput type="text" placeholder='İsim Soyisim şeklinde giriniz' value={register.fullName}
+                            onChange={nameHandler}/>
+                <LoginLabel>Yazar Şifresi</LoginLabel>
+                <LoginInput type="password" value={register.password} onChange={passwordHandler}/>
+                <LoginLabel>Yazarın Edebi Akımları</LoginLabel>
+                <LoginInput type="text" placeholder='Virgül bırakarak giriniz.' value={register.literaryMovement}
+                            onChange={passwordHandler}/>
+                <LoginLabel>Yazarın Doğum Yılı</LoginLabel>
+                <LoginInput type="date" value={register.birthday} onChange={passwordHandler}/>
             </LoginForm>
-            <LoginButton onClick={clickHandler}>Login</LoginButton>
+            <LoginButton onClick={clickHandler}>Kayıt</LoginButton>
+            <ToastContainer/>
         </LoginWrapper>
     );
 };
 
-export default Login;
+export default Register;

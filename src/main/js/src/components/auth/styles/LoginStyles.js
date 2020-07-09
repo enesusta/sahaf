@@ -14,7 +14,7 @@ const LoginForm = styled.form`
   grid-auto-rows: 35px;
   padding-top: 20px;
   grid-row-gap: 5px;
-  width: 50%;
+  width: 65%;
   
   @media only screen and (max-width: 768px) {
     width: 80%;
@@ -42,7 +42,7 @@ const LoginInput = styled.input`
 const LoginButton = styled.button`
     display: grid;
     margin-top: 30px;
-    width: 50%;
+    width: 65%;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
