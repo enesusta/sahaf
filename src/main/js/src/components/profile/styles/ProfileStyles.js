@@ -8,11 +8,12 @@ const ProfileTabHeader = styled.label`
 const ProfileTabWrapper = styled.section`
   display: grid;
   grid-template-rows: 35px 6fr;
+  grid-row-gap: 15px;
 `;
 
 const ProfileTabForm = styled.form`
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 3fr 7fr;
   grid-row-gap: 10px;
 `;
 
@@ -21,8 +22,24 @@ const ProfileTabInput = styled.input`
   border-radius: 4px;
   padding-bottom: 10px;
   padding-top: 10px;
-  padding-left: 5px;
+  padding-left: 10px;
 `;
 
+const ProfileTabLabel = styled.label`
+  text-align: center;
+  align-self: center;
+`
 
-export {ProfileTabHeader, ProfileTabWrapper, ProfileTabForm, ProfileTabInput};
+const ProfileButton = styled.button`
+  border: none;
+  border-radius: 4px;
+`
+
+export {
+    ProfileTabHeader,
+    ProfileTabWrapper,
+    ProfileTabForm,
+    ProfileTabInput,
+    ProfileTabLabel,
+    ProfileButton
+};

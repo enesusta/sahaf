@@ -4,4 +4,5 @@ import com.github.enesusta.sahaf.author.Author;
 
 public interface AuthenticationCacheService {
     Author get(String username);
+    void removeCache(String username);
 }
