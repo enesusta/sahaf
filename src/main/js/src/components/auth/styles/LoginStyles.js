@@ -31,7 +31,6 @@ const LoginLabel = styled.label`
   @media only screen and (max-width: 768px) {
    justify-content: start;
   }
-  
 `;
 
 const LoginInput = styled.input`

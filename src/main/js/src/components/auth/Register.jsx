@@ -19,9 +19,7 @@ const Login = () => {
 
     const clickHandler = () => {
 
-        const url = `${process.env.REACT_APP_API}/auth/login`;
-
-        console.log(authUser);
+        const url = `${process.env.REACT_APP_API}/auth/register`;
 
         axios
             .post(url, authUser)
@@ -31,8 +29,7 @@ const Login = () => {
                     localStorage.setItem('isLogged', true);
                     localStorage.setItem('user', authUser.fullName);
                     isAuth.updateIsAuth(true);
-                    history.push("/");
-                    console.log(`res data is ${res.data}`)
+                    history.push("/login");
                 }
             })
             .catch(err => {
@@ -42,7 +39,7 @@ const Login = () => {
 
     return (
         <LoginWrapper>
-            <h3>Giriş Yapın</h3>
+            <h3>Kayıt olun!</h3>
             <LoginForm>
                 <LoginLabel>Kullanıcı Adı</LoginLabel>
                 <LoginInput type="text" value={authUser.fullName} onChange={usernameHandler}/>
