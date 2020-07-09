@@ -23,7 +23,7 @@ const ProfilePasswordChanger = () => {
 
     const notify = () => toast.success('Şifreniz başarı ile değişti!', {
         position: "top-center",
-        autoClose: 2000,
+        autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -44,9 +44,8 @@ const ProfilePasswordChanger = () => {
             .put(url, password, httpHeader)
             .then(res => {
                 if (res.status === 200) {
-                    if (res.data === true) {
-                        notify();
-                    }
+                    console.log(res.data);
+                    if (res.data === true) notify();
                 }
             })
             .catch(err => {
@@ -62,6 +61,7 @@ const ProfilePasswordChanger = () => {
                 <ProfileTabInput type='password' value={password.newPassword} onChange={passwordHandler}/>
             </ProfileTabForm>
             <LoginButton width={100} onClick={clickHandler}>Şifreyi Güncelle</LoginButton>
+            <ToastContainer />
         </ProfileTabWrapper>
     );
 };

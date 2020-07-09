@@ -13,9 +13,16 @@ const Login = () => {
         setAuthUser({...authUser, fullName: e.target.value});
     };
 
-    const passcodeHandler = e => {
+    const passwordHandler = e => {
         setAuthUser({...authUser, password: e.target.value});
     };
+
+    const enterHandler = e => {
+        if (e.key === "Enter") {
+            clickHandler();
+        }
+    }
+
 
     const clickHandler = () => {
 
@@ -47,7 +54,10 @@ const Login = () => {
                 <LoginLabel>Kullanıcı Adı</LoginLabel>
                 <LoginInput type="text" value={authUser.fullName} onChange={usernameHandler}/>
                 <LoginLabel>Şifre</LoginLabel>
-                <LoginInput type="password" value={authUser.password} onChange={passcodeHandler}/>
+                <LoginInput type="password"
+                            value={authUser.password}
+                            onChange={passwordHandler}
+                            onKeyPress={enterHandler}/>
             </LoginForm>
             <LoginButton onClick={clickHandler}>Login</LoginButton>
         </LoginWrapper>

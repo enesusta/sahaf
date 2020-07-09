@@ -35,7 +35,6 @@ public class AuthorController {
 
     @PutMapping
     public final CompletableFuture<Boolean> changePassword(@RequestBody PasswordChangeRequest passwordChangeRequest) {
-        log.info("An author who attempt to change his/her password");
         final Supplier<Boolean> changeSupplier = authorService.changePassword(passwordChangeRequest);
         return CompletableFuture.supplyAsync(changeSupplier);
     }

@@ -18,6 +18,7 @@ import java.util.Set;
 @ToString
 public class Author {
 
+    //  @Indexed(unique=true, direction=IndexDirection.DESCENDING, dropDups=true)
     @Indexed(unique = true)
     private String fullName;
 
@@ -27,7 +28,7 @@ public class Author {
      * Standart bir yazar için belirlenen yetkiler aşağıdaki şekildedir:
      * - BOOK_WRITE = İlgili yazarın sisteme kitap girdisi yapabilmesi için
      * - BOOK_READ = İlgili yazarın sistemden kitap okuyabilmesi için
-     *
+     * <p>
      * admin kullanıcısı bu yetkilerden birini veya her ikisinide alarak ilgili kullanıcının sisteme
      * erişimini kısıtlayabilir.
      */
