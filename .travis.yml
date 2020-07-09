@@ -1,0 +1,25 @@
+language: java
+
+jdk:
+  - openjdk11
+
+os:
+  - linux
+
+sudo: required
+
+cache:
+  directories:
+    - $HOME/.m2
+
+branches:
+  except:
+    - develop
+    - /^feature/\d+\.\d+$/
+  only:
+    - master
+
+install: true
+
+script:
+  - mvn clean test -DrepoToken=$COVERALLS_TOKEN jacoco:report coveralls:report

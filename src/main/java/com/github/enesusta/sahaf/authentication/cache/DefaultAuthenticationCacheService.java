@@ -7,7 +7,6 @@ import com.github.enesusta.sahaf.author.Author;
 import com.github.enesusta.sahaf.author.service.AuthorService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
@@ -46,6 +45,7 @@ public class DefaultAuthenticationCacheService implements AuthenticationCacheSer
             log.error(e.getMessage());
         } catch (JedisException | JsonProcessingException e) {
             log.error(e.getMessage());
+            log.error("burada patliyor aq");
         }
 
         return author;

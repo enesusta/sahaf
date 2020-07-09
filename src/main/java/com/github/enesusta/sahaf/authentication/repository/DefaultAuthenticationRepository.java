@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
@@ -13,9 +14,10 @@ import java.util.Optional;
 @Repository
 @RequiredArgsConstructor
 @Slf4j
-public final class DefaultAuthenticationRepository implements AuthenticationRepository {
+public class DefaultAuthenticationRepository implements AuthenticationRepository {
 
     private final MongoTemplate mongoTemplate;
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public Optional<Author> findByUsername(final String username) {
@@ -28,6 +30,9 @@ public final class DefaultAuthenticationRepository implements AuthenticationRepo
     @Override
     public boolean register(final Author author) {
         log.info("An author attempted to register..");
-        return mongoTemplate.save(author) != null;
+        Author temp = author;
+        final String encodedPassword = passwordEncoder.encode(temp.getPassword());
+        temp.setPassword(encodedPassword);
+        return mongoTemplate.save(temp) != null;
     }
 }

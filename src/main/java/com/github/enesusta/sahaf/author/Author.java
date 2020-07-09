@@ -25,14 +25,14 @@ public class Author {
 
     /**
      * Standart bir yazar için belirlenen yetkiler aşağıdaki şekildedir:
-     * - ROLE_BOOK_WRITE = İlgili yazarın sisteme kitap girdisi yapabilmesi için
-     * - ROLE_BOOK_READ = İlgili yazarın sistemden kitap okuyabilmesi için
+     * - BOOK_WRITE = İlgili yazarın sisteme kitap girdisi yapabilmesi için
+     * - BOOK_READ = İlgili yazarın sistemden kitap okuyabilmesi için
      *
      * admin kullanıcısı bu yetkilerden birini veya her ikisinide alarak ilgili kullanıcının sisteme
      * erişimini kısıtlayabilir.
      */
 
-    private Set<String> authorRoles = Set.of("ROLE_BOOK_WRITE", "ROLE_BOOK_READ");
+    private Set<String> authorRoles = Set.of("BOOK_WRITE", "BOOK_READ");
 
 
     private String literaryMovement;
