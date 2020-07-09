@@ -24,6 +24,14 @@ const Register = () => {
         setRegister({...register, password: e.target.value});
     };
 
+    const literaryHandler = e => {
+        setRegister({...register, literaryMovement: e.target.value})
+    }
+
+    const birthdayHandler = e => {
+        setRegister({...register, birthday: e.target.value});
+    }
+
     const notify = () => toast.success('Kayıt işlemi başarılı!', {
         position: "top-center",
         autoClose: 2000,
@@ -64,9 +72,9 @@ const Register = () => {
                 <LoginInput type="password" value={register.password} onChange={passwordHandler}/>
                 <LoginLabel>Yazarın Edebi Akımları</LoginLabel>
                 <LoginInput type="text" placeholder='Virgül bırakarak giriniz.' value={register.literaryMovement}
-                            onChange={passwordHandler}/>
+                            onChange={literaryHandler}/>
                 <LoginLabel>Yazarın Doğum Yılı</LoginLabel>
-                <LoginInput type="date" value={register.birthday} onChange={passwordHandler}/>
+                <LoginInput type="text" value={register.birthday} onChange={birthdayHandler}/>
             </LoginForm>
             <LoginButton onClick={clickHandler}>Kayıt</LoginButton>
             <ToastContainer/>
