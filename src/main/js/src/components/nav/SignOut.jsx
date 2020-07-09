@@ -8,6 +8,7 @@ const SignOut = () => {
 
     const logoutHandler = async () => {
         localStorage.removeItem('isLogged');
+        localStorage.removeItem('token');
         isAuth.updateIsAuth(false);
         history.push("/");
     };

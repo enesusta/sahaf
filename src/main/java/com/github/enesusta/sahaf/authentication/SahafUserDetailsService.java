@@ -29,7 +29,7 @@ public class SahafUserDetailsService implements UserDetailsService {
         final Author author = authenticationCacheService.get(s);
         final Set<GrantedAuthority> authoritySet = new HashSet<>();
 
-        author.getAuthorRoles().stream().map(SimpleGrantedAuthority::new).forEach(authoritySet::add);
+        author.getRoles().stream().map(SimpleGrantedAuthority::new).forEach(authoritySet::add);
         return new User(author.getFullName(), author.getPassword(), authoritySet);
     }
 

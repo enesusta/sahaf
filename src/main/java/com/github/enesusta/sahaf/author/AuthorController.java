@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -33,6 +34,11 @@ public class AuthorController {
         return CompletableFuture.supplyAsync(authorSupplier);
     }
 
+    @GetMapping("/search")
+    public final CompletableFuture<Author> findByNamePathQuery(@RequestParam String name) {
+        return CompletableFuture.supplyAsync(authorService.findByNamePathQuery(name));
+    }
+
     @PutMapping
     public final CompletableFuture<Boolean> changePassword(@RequestBody PasswordChangeRequest passwordChangeRequest) {
         //       final Supplier<Boolean> changeSupplier = authorService.changePassword(passwordChangeRequest);
@@ -42,7 +48,7 @@ public class AuthorController {
 
     @GetMapping("/all")
     public final List<Author> getAll() {
-        return authorRepository.findAll();
+        return authorRepository.findAllByQuery();
     }
 
 

@@ -6,6 +6,8 @@ import {ProtectedRoute} from "./context/auth/ProtectedRoute";
 import Profile from "./components/profile/Profile";
 import Footer from "./components/footer/Footer";
 import Register from "./components/auth/Register";
+import Author from "./components/author/Author";
+import Authors from "./components/author/Authors";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
                     <Route exact path="/" component={() => 'home'}/>
                     <Route exact path="/login" component={Login}/>
                     <Route exact path="/register" component={Register}/>
+                    <Route exact path="/author/:username" component={Author}/>
+                    <Route exact path="/authors" component={Authors} />
 
                     <ProtectedRoute exact path="/profile" component={Profile}/>
                 </Switch>

@@ -26,11 +26,8 @@ const Navbar = () => {
                     <img src={click ? burger : close} alt="" />
                 </button>
                 <nav className="navbar-links">
-                    <Link to="/services">
-                        <button className="navbar-link">Services</button>
-                    </Link>
-                    <Link to="/projects">
-                        <button className="navbar-link">Projects</button>
+                    <Link to="/authors">
+                        <button className="navbar-link">Yazarlar</button>
                     </Link>
                     <Link to="/profile">
                         <button className="navbar-link">Profilim</button>
@@ -42,9 +39,6 @@ const Navbar = () => {
                 className={!click ? "navbar-mobile-active" : "navbar-mobile-passive"}
             >
                 <nav className="navbar-links-mobile">
-                    <div className="navbar-link">
-                        <a href="#">Services</a>
-                    </div>
                     <div className="navbar-link">
                         <a href="#">Projects</a>
                     </div>
