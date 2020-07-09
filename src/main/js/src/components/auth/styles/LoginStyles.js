@@ -42,15 +42,15 @@ const LoginInput = styled.input`
 const LoginButton = styled.button`
     display: grid;
     margin-top: 30px;
-    width: 65%;
+    width: ${props => props.width || 65}%;
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
-    background-color: pink;
+    background-color: cornflowerblue;
     transition: all 0.3s ease 0s;
     cursor: pointer;
     &:hover {
-      background-color: hotpink;
+      background-color: dodgerblue;
     }
     
      @media only screen and (max-width: 768px) {

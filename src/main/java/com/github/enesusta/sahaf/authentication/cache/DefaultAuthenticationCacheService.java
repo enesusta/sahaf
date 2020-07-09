@@ -45,7 +45,6 @@ public class DefaultAuthenticationCacheService implements AuthenticationCacheSer
             log.error(e.getMessage());
         } catch (JedisException | JsonProcessingException e) {
             log.error(e.getMessage());
-            log.error("burada patliyor aq");
         }
 
         return author;
