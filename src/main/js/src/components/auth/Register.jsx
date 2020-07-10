@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const initialObject = {
     fullName: "",
     password: "",
-    literaryMovement: "",
+    literary: "",
     birthday: "",
 }
 
@@ -25,7 +25,7 @@ const Register = () => {
     };
 
     const literaryHandler = e => {
-        setRegister({...register, literaryMovement: e.target.value})
+        setRegister({...register, literary: e.target.value})
     }
 
     const birthdayHandler = e => {
@@ -71,7 +71,7 @@ const Register = () => {
                 <LoginLabel>Yazar Şifresi</LoginLabel>
                 <LoginInput type="password" value={register.password} onChange={passwordHandler}/>
                 <LoginLabel>Yazarın Edebi Akımları</LoginLabel>
-                <LoginInput type="text" placeholder='Virgül bırakarak giriniz.' value={register.literaryMovement}
+                <LoginInput type="text" placeholder='Virgül bırakarak giriniz.' value={register.literary}
                             onChange={literaryHandler}/>
                 <LoginLabel>Yazarın Doğum Yılı</LoginLabel>
                 <LoginInput type="text" value={register.birthday} onChange={birthdayHandler}/>

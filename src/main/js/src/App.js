@@ -8,6 +8,8 @@ import Footer from "./components/footer/Footer";
 import Register from "./components/auth/Register";
 import Author from "./components/author/Author";
 import Authors from "./components/author/Authors";
+import {AdminRoute} from "./context/auth/AdminRoute";
+import Admin from "./components/admin/Admin";
 
 
 function App() {
@@ -20,8 +22,8 @@ function App() {
                     <Route exact path="/login" component={Login}/>
                     <Route exact path="/register" component={Register}/>
                     <Route exact path="/author/:username" component={Author}/>
-                    <Route exact path="/authors" component={Authors} />
-
+                    <Route exact path="/authors" component={Authors}/>
+                    <AdminRoute exact path="/admin" component={Admin}/>
                     <ProtectedRoute exact path="/profile" component={Profile}/>
                 </Switch>
                 <Footer/>
