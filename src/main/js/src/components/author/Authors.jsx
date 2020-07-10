@@ -13,6 +13,13 @@ const Li = styled.li`
   justify-self: center;
 `;
 
+const AuthorsNotFound = ({err}) => {
+    return (
+        <Li>{err.data} : Hata Kodu: <b>{err.status}</b></Li>
+    )
+}
+
+
 const Authors = () => {
     const {data, isLoading, error} = useAuthFetch('/author/all')
 
@@ -21,6 +28,9 @@ const Authors = () => {
         return <Facebook/>
     }
 
+    if (error) {
+        return <AuthorsNotFound err={error}/>
+    }
 
     return (
         <AuthorsWrapper>
