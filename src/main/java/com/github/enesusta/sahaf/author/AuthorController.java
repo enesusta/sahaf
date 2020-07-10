@@ -1,6 +1,7 @@
 package com.github.enesusta.sahaf.author;
 
 import com.github.enesusta.sahaf.author.dto.AuthorDTO;
+import com.github.enesusta.sahaf.author.exception.AuthorNotFoundException;
 import com.github.enesusta.sahaf.author.repository.AuthorRepository;
 import com.github.enesusta.sahaf.author.service.AuthorService;
 import com.github.enesusta.sahaf.change.PasswordChangeRequest;
@@ -47,8 +48,11 @@ public class AuthorController {
     }
 
     @GetMapping("/all")
-    public final CompletableFuture<List<AuthorDTO>> getAll() {
-        return CompletableFuture.supplyAsync(authorService.getAll());
+    public final CompletableFuture<List<AuthorDTO>> getAll() throws AuthorNotFoundException {
+        List<AuthorDTO> list = authorService.getAll();
+        log.info("size {}", list.size());
+        if (list.size() == 0) throw new AuthorNotFoundException();
+        return CompletableFuture.supplyAsync(() -> list);
     }
 
 

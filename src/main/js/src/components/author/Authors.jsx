@@ -3,6 +3,15 @@ import {useAuthFetch} from "kanca/http";
 import {AuthorsWrapper} from "./styles/AuthorStyles";
 import {Facebook} from "react-content-loader";
 import AuthorsShowCase from "./AuthorsShowcase";
+import styled from "styled-components";
+
+const Li = styled.li`
+  margin-top: 100px;
+  list-style: none;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+`;
 
 const Authors = () => {
     const {data, isLoading, error} = useAuthFetch('/author/all')
@@ -11,6 +20,7 @@ const Authors = () => {
     if (isLoading) {
         return <Facebook/>
     }
+
 
     return (
         <AuthorsWrapper>

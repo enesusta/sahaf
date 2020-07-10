@@ -43,8 +43,8 @@ public class DefaultAuthorService implements AuthorService {
     }
 
     @Override
-    public Supplier<List<AuthorDTO>> getAll() {
-
+    public List<AuthorDTO> getAll() {
+        log.info("Get request on /author/all PATH");
 
         final List<Author> current = authorRepository.findAll();
         final List<AuthorDTO> authors = new ArrayList<>(32);
@@ -60,7 +60,7 @@ public class DefaultAuthorService implements AuthorService {
 
         });
 
-        return () -> authors;
+        return current != null ? authors : null;
     }
 
 
