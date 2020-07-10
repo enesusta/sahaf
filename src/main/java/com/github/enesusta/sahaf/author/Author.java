@@ -35,7 +35,6 @@ public class Author {
 
     private Set<String> roles = Set.of("BOOK_WRITE", "BOOK_READ");
 
-
     private String literary;
 
     private short birthday;
