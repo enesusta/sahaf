@@ -17,8 +17,7 @@ const AuthorsNotFound = ({err}) => {
     return (
         <Li>{err.data} : Hata Kodu: <b>{err.status}</b></Li>
     )
-}
-
+};
 
 const Authors = () => {
     const {data, isLoading, error} = useAuthFetch('/author/all')
