@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      database: mongo-rest
+      uri: mongodb://${MNAME}:${MPASS}@localhost:27017
+
+  redis:
+    jedis:
+      password: ${REDIS_PASSWORD}
+
+jwt:
+  secret:
+    key: ${JWT_SECRET}
+    validity: 86400

@@ -8,14 +8,14 @@ import com.github.enesusta.sahaf.author.service.AuthorService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.exceptions.JedisException;
 
 import java.util.Optional;
 
-@Service
+@Component
 @Slf4j
 @RequiredArgsConstructor
 public class DefaultAuthenticationCacheService implements AuthenticationCacheService {
@@ -45,9 +45,15 @@ public class DefaultAuthenticationCacheService implements AuthenticationCacheSer
             log.error(e.getMessage());
         } catch (JedisException | JsonProcessingException e) {
             log.error(e.getMessage());
-            log.error("burada patliyor aq");
         }
 
         return author;
+    }
+
+    @Override
+    public void removeCache(String username) {
+
+
+
     }
 }

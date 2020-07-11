@@ -4,6 +4,8 @@ import com.github.enesusta.sahaf.authentication.cache.AuthenticationCacheService
 import com.github.enesusta.sahaf.author.Author;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -20,14 +22,20 @@ import java.util.Set;
 @Slf4j
 public class SahafUserDetailsService implements UserDetailsService {
 
-    private final AuthenticationCacheService authenticationCacheService;
+    private AuthenticationCacheService authenticationCacheService;
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         final Author author = authenticationCacheService.get(s);
         final Set<GrantedAuthority> authoritySet = new HashSet<>();
 
-        author.getAuthorRoles().stream().map(SimpleGrantedAuthority::new).forEach(authoritySet::add);
+        author.getRoles().stream().map(SimpleGrantedAuthority::new).forEach(authoritySet::add);
         return new User(author.getFullName(), author.getPassword(), authoritySet);
+    }
+
+    @Autowired
+    @Qualifier("defaultAuthenticationCacheService")
+    public void setAuthenticationCacheService(AuthenticationCacheService authenticationCacheService) {
+        this.authenticationCacheService = authenticationCacheService;
     }
 }

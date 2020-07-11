@@ -23,9 +23,9 @@ const ProfileSelector = ({handler}) => {
 
     return (
         <Wrapper>
-            <SelectorButton onClick={() => handler(1)}>Üyelik Bilgilerim</SelectorButton>
-            <SelectorButton onClick={() => handler(2)}>Adres Defterim</SelectorButton>
-            <SelectorButton onClick={() => handler(3)}>Şifre Değiştir</SelectorButton>
+            <SelectorButton onClick={() => handler(1)}>Bilgilerim</SelectorButton>
+            <SelectorButton onClick={() => handler(2)}>Kitaplarım</SelectorButton>
+            <SelectorButton onClick={() => handler(3)}>Kitap Ekle</SelectorButton>
         </Wrapper>
     )
 };
