@@ -10,5 +10,5 @@ spring:
 
 jwt:
   secret:
-    key: ${JWT_KEY}
+    key: ${JWT_SECRET}
     validity: 86400
