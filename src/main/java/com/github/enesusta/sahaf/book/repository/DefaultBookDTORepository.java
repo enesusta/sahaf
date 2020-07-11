@@ -22,6 +22,7 @@ public class DefaultBookDTORepository implements BookDTORepository {
 
     @Override
     public Set<BookDTO> getBooksOfTheAuthor(final String authorName) {
+        log.info("An author attempts to get information of her/his books");
         final Query findByNameQuery = Query.query(Criteria.where("fullName").is(authorName));
         final Author author = mongoTemplate.findOne(findByNameQuery, Author.class);
         final Set<Book> books = author.getBooks();

@@ -26,7 +26,6 @@ function App() {
                     <AdminRoute exact path="/admin" component={Admin}/>
                     <ProtectedRoute exact path="/profile" component={Profile}/>
                 </Switch>
-                <Footer/>
             </div>
         </BrowserRouter>
     );

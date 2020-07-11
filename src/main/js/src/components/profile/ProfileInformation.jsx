@@ -9,6 +9,7 @@ import {
 import {useAuthFetch} from "kanca/http";
 import {Facebook} from 'react-content-loader'
 import {LoginButton} from '../auth/styles/LoginStyles'
+import {Li} from "../styles/GeneralStyles";
 
 
 const ProfileInformation = () => {
@@ -19,9 +20,12 @@ const ProfileInformation = () => {
         return <Facebook/>
     }
 
+
     if (error) {
-        return <li>Bu sayfayı görüntülemek için yetkiniz bulunmuyor.</li>
+        return <Li>Bu sayfayı görüntülemek için yetkiniz bulunmuyor. Tekrar giriş yapmayı deneyin. Hata
+            Kodu: <b>{error.status}</b></Li>
     }
+
 
     return (
         <ProfileTabWrapper>
