@@ -31,39 +31,45 @@ const ProfileBook = ({bookProp}) => {
     }
 
     const updateHandler = e => {
-        e.preventDefault();
 
-        const url = `${process.env.REACT_APP_API}/book`;
+        if (window.confirm('Ilgili kayıt güncellenecektir , onaylıyor musunuz?')) {
+            const url = `${process.env.REACT_APP_API}/book`;
 
-        axios
-            .put(url, book, httpHeader)
-            .then(res => {
-                console.log(res.data);
-            })
-            .catch(err => {
-                console.log(err.response)
-            })
+            axios
+                .put(url, book, httpHeader)
+                .then(res => {
+                    console.log(res.data);
+                })
+                .catch(err => {
+                    console.log(err.response)
+                });
+        }
+
 
     }
 
-    const deleteHandler = e => {
-        e.preventDefault();
+    const deleteHandler = () => {
 
-        const url = `${process.env.REACT_APP_API}/book`;
+        if (window.confirm('Bu kitabı silmek istediğinizden emin misiniz?')) {
+            const url = `${process.env.REACT_APP_API}/book`;
 
-        const body = {
-            httpHeader,
-            data: book
+            const body = {
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem('token')}`
+                },
+                data: book
+            }
+
+            axios
+                .delete(url, body)
+                .then(res => {
+                    console.log(res.data)
+                })
+                .catch(err => {
+                    console.log(err.response)
+                });
         }
 
-        axios
-            .delete(url, body)
-            .then(res => {
-                console.log(res.data)
-            })
-            .catch(err => {
-                console.log(err.response)
-            });
     }
 
     return (
@@ -91,7 +97,6 @@ const ProfileBook = ({bookProp}) => {
                 <Button width={100} color='#afe34f' hov='#c7ec83' onClick={updateHandler}>Güncelle</Button>
                 <Button width={100} color='#ff475a' hov='#ff8591' onClick={deleteHandler}>Sil</Button>
             </ProfileTabForm>
-            {JSON.stringify(book)}
         </>
     );
 };

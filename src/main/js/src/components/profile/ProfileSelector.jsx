@@ -18,21 +18,29 @@ const SelectorButton = styled.button`
   color: white;
   cursor: pointer;
   font-weight: 200;
+  text-decoration: none;
+  width: 100%;
 `;
 
-const ProfileSelector = ({match, handler}) => {
+const ProfileSelector = () => {
 
     return (
         <Wrapper>
-            <SelectorButton>
-                <Link to={`${match.url}`}>Bilgilerim</Link>
-            </SelectorButton>
-            <SelectorButton>
-                <Link to={`${match.url}/books`}>Kitaplarım</Link>
-            </SelectorButton>
-            <SelectorButton>
-                <Link to={`${match.url}/books/add`}>Kitap Ekle</Link>
-            </SelectorButton>
+            <Link to={`/profile`}>
+                <SelectorButton>
+                    Bilgilerim
+                </SelectorButton>
+            </Link>
+            <Link to={`/profile/books`}>
+                <SelectorButton>
+                    Kitaplarım
+                </SelectorButton>
+            </Link>
+            <Link to={`/profile/books/add`}>
+                <SelectorButton>
+                    Kitap Ekle
+                </SelectorButton>
+            </Link>
         </Wrapper>
     )
 };
