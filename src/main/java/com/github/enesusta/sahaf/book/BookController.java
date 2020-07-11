@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -45,6 +46,12 @@ public class BookController {
     @PutMapping
     public CompletableFuture<Boolean> updateBook(@RequestBody Book book) {
         return CompletableFuture.supplyAsync(() -> bookService.update(book));
+    }
+
+    @DeleteMapping
+    public CompletableFuture<Boolean> deleteBook(@RequestBody Book book) {
+        log.info("gelemiyor bile");
+        return CompletableFuture.supplyAsync(() -> bookService.delete(book));
     }
 
 }

@@ -20,6 +20,7 @@ import java.util.UUID;
 @Service
 @RequiredArgsConstructor
 @Slf4j
+@SuppressWarnings("Duplicates")
 public class DefaultBookService implements BookService {
 
     private final MongoTemplate mongoTemplate;
@@ -77,5 +78,23 @@ public class DefaultBookService implements BookService {
         mongoTemplate.updateFirst(findByNameQuery, update, Author.class);
 
         return isUpdated && isAdded;
+    }
+
+    @Override
+    public boolean delete(Book book) {
+        boolean isDeleted = false;
+
+        final Query findByNameQuery = Query.query(Criteria.where("fullName").is(book.getAuthor()));
+        final Author author = mongoTemplate.findOne(findByNameQuery, Author.class);
+        final Set<Book> books = author.getBooks();
+        final Book oldBook = books.stream().filter(e -> e.getIsbn().equals(book.getIsbn())).findFirst().get();
+
+        isDeleted = books.remove(oldBook);
+
+        final Update update = new Update();
+        update.set("books", books);
+        mongoTemplate.updateFirst(findByNameQuery, update, Author.class);
+
+        return isDeleted;
     }
 }

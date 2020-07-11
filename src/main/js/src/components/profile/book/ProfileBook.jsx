@@ -48,7 +48,22 @@ const ProfileBook = ({bookProp}) => {
 
     const deleteHandler = e => {
         e.preventDefault();
-        console.log(bookProp.title);
+
+        const url = `${process.env.REACT_APP_API}/book`;
+
+        const body = {
+            httpHeader,
+            data: book
+        }
+
+        axios
+            .delete(url, body)
+            .then(res => {
+                console.log(res.data)
+            })
+            .catch(err => {
+                console.log(err.response)
+            });
     }
 
     return (
@@ -64,15 +79,15 @@ const ProfileBook = ({bookProp}) => {
                 <ProfileTabLabel>Dil</ProfileTabLabel>
                 <ProfileTabInput
                     defaultValue={bookProp.language}
-                onChange={languageHandler}/>
+                    onChange={languageHandler}/>
                 <ProfileTabLabel>Tutar</ProfileTabLabel>
                 <ProfileTabInput
                     defaultValue={bookProp.price}
-                onChange={priceHandler}/>
+                    onChange={priceHandler}/>
                 <ProfileTabLabel>Sayfa Sayısı</ProfileTabLabel>
                 <ProfileTabInput
                     defaultValue={bookProp.pages}
-                onChange={pagesHandler}/>
+                    onChange={pagesHandler}/>
                 <Button width={100} color='#afe34f' hov='#c7ec83' onClick={updateHandler}>Güncelle</Button>
                 <Button width={100} color='#ff475a' hov='#ff8591' onClick={deleteHandler}>Sil</Button>
             </ProfileTabForm>
