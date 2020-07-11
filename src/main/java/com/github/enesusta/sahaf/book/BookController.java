@@ -9,6 +9,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -39,6 +40,11 @@ public class BookController {
          * Null olamaz zira BookDTORepository içinde initialize ettim. dolayısı ile size'i check ediyorum.
          */
         return CompletableFuture.supplyAsync(() -> books);
+    }
+
+    @PutMapping
+    public CompletableFuture<Boolean> updateBook(@RequestBody Book book) {
+        return CompletableFuture.supplyAsync(() -> bookService.update(book));
     }
 
 }

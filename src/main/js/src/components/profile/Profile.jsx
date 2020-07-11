@@ -18,7 +18,7 @@ const Profile = () => {
     const profileMap = new Map();
     profileMap.set(1, <ProfileInformation/>);
     profileMap.set(2, <ProfileBooks/>)
-    profileMap.set(3, <ProfileBookAdd/>);
+    profileMap.set(3, <ProfileBookAdd handler={setCount}/>);
 
     return (
         <Wrapper>

@@ -10,6 +10,7 @@ const ProfileBooksWrapper = styled.section`
 const BookImage = styled.img`
   margin: 0 auto;
   width: 30%;
+  height: 50px;
 `;
 
 export {

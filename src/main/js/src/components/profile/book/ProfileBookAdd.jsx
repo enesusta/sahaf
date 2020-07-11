@@ -20,7 +20,7 @@ const initialObject = {
     price: ""
 }
 
-const ProfileBookAdd = () => {
+const ProfileBookAdd = ({handler}) => {
     const [book, setBook] = useState(initialObject);
 
     const isbnHandler = e => {
@@ -43,8 +43,7 @@ const ProfileBookAdd = () => {
         setBook({...book, price: e.target.value});
     };
 
-    const clickHandler = e => {
-        e.preventDefault();
+    const clickHandler = () => {
 
         const url = `${process.env.REACT_APP_API}/book`
 
@@ -56,6 +55,8 @@ const ProfileBookAdd = () => {
             .catch(err => {
                 console.log(err.response);
             });
+
+        handler(2);
     }
 
     return (
