@@ -40,7 +40,7 @@ public class AuthorController {
     public final CompletableFuture<List<AuthorDTO>> getAll() throws AuthorNotFoundException {
         List<AuthorDTO> list = authorService.getAll();
         log.info("size {}", list.size());
-        if (list.size() == 0) throw new AuthorNotFoundException();
+        if (list.size() == 0 || list == null) throw new AuthorNotFoundException();
         return CompletableFuture.supplyAsync(() -> list);
     }
 

@@ -1,19 +1,14 @@
-package com.github.enesusta.sahaf.book;
+package com.github.enesusta.sahaf.book.dto;
 
 import lombok.Data;
 
-import java.util.Date;
-
 @Data
-public class Book {
+public class BookDTO {
 
-    private String author;
     private String isbn;
     private String title;
     private String language;
     private String price;
     private short pages;
-
-    private Date createdDate;
 
 }

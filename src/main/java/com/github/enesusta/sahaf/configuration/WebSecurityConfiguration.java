@@ -62,6 +62,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, "/author/all").permitAll()
                 .antMatchers(HttpMethod.GET, "/author/search").permitAll()
                 .antMatchers(HttpMethod.POST, "/book").hasAuthority("BOOK_WRITE")
+                .antMatchers(HttpMethod.GET, "/book").hasAuthority("BOOK_READ")
                 .antMatchers("/admin/**").hasAuthority("ADMIN")
                 .antMatchers("/author/**").hasAnyAuthority("BOOK_READ", "BOOK_WRITE")
                 .antMatchers("/", "/favicon.ico", "/**/*.png", "/**/*.gif", "/**/*.svg", "/**/*.jpg", "/**/*.html", "/**/*.css", "/**/*.js").permitAll()

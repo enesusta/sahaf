@@ -60,7 +60,7 @@ public class DefaultAuthorService implements AuthorService {
 
         });
 
-        return current != null ? authors : null;
+        return authors;
     }
 
 
