@@ -25,6 +25,6 @@ branches:
 install: true
 
 script:
-  - docker run -d --name mongo_container -e MONGO_INITDB_ROOT_USERNAME=$MNAME -e MONGO_INITDB_ROOT_PASSWORD=$MPASS -pmongo
+  - docker run -d --name mongo_container -e MONGO_INITDB_ROOT_USERNAME=$MNAME -e MONGO_INITDB_ROOT_PASSWORD=$MPASS -p mongo
   - curl https://raw.githubusercontent.com/enesusta/travis-test/master/application.yml?token=$YAML_TOKEN -output src/main/resources/application.yml
   - mvn clean test -DrepoToken=$COVERALLS_TOKEN jacoco:report coveralls:report
