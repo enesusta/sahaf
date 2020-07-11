@@ -30,10 +30,10 @@ public class DefaultAuthorService implements AuthorService {
     }
 
     @Override
-    public Supplier<Author> findByNamePathQuery(String fullName) {
+    public Supplier<AuthorDTO> findByNamePathQuery(String fullName) {
         final Query findByNameQuery = Query.query(Criteria.where("fullName").is(fullName));
         final Author author = mongoTemplate.findOne(findByNameQuery, Author.class);
-        final Author temp = new Author();
+        final AuthorDTO temp = new AuthorDTO();
         temp.setFullName(author.getFullName());
         temp.setBooks(author.getBooks());
         temp.setCreatedDate(author.getCreatedDate());

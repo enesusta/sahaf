@@ -3,13 +3,13 @@ import {BrowserRouter, Route, Switch} from "react-router-dom";
 import Login from "./components/auth/Login";
 import Navbar from "./components/nav/Navbar";
 import {ProtectedRoute} from "./context/auth/ProtectedRoute";
-import {Profile, ProfileWrapper} from "./components/profile/Profile";
-import Footer from "./components/footer/Footer";
+import {Profile} from "./components/profile/Profile";
 import Register from "./components/auth/Register";
 import Author from "./components/author/Author";
 import Authors from "./components/author/Authors";
 import {AdminRoute} from "./context/auth/AdminRoute";
 import Admin from "./components/admin/Admin";
+import Home from "./components/home/Home";
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
             <div className="container">
                 <Navbar/>
                 <Switch>
-                    <Route exact path="/" component={() => 'home'}/>
+                    <Route exact path="/" component={Home}/>
                     <Route exact path="/login" component={Login}/>
                     <Route exact path="/register" component={Register}/>
                     <Route exact path="/author/:username" component={Author}/>

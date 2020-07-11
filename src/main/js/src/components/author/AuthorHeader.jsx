@@ -20,8 +20,8 @@ const AuthorHeader = ({name, date}) => {
     return (
         <>
             <Image src={user}/>
-            <Header>{name}</Header>
-            <Header>Joined {date}</Header>
+            <Header><strong>{name}</strong> isimli yazar <strong>{date.substring(0,19)}</strong> tarihinden beri üye.</Header>
+            <Header>Aşağıdaki tabloda yazarımıza ait kitapların listesini görmektesiniz.</Header>
         </>
     );
 

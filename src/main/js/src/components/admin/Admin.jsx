@@ -14,8 +14,6 @@ const Admin = () => {
     if (isLoading)
         return <Facebook/>
 
-
-
     return (
         <li>{JSON.stringify(error)}</li>
     )

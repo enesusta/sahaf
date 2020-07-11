@@ -32,13 +32,13 @@ public class AuthorController {
     }
 
     @GetMapping("/search")
-    public final CompletableFuture<Author> findByNamePathQuery(@RequestParam String name) {
+    public final CompletableFuture<AuthorDTO> findByNamePathQuery(@RequestParam String name) {
         return CompletableFuture.supplyAsync(authorService.findByNamePathQuery(name));
     }
 
     @GetMapping("/all")
     public final CompletableFuture<List<AuthorDTO>> getAll() throws AuthorNotFoundException {
-        List<AuthorDTO> list = authorService.getAll();
+        final List<AuthorDTO> list = authorService.getAll();
         log.info("size {}", list.size());
         if (list.size() == 0 || list == null) throw new AuthorNotFoundException();
         return CompletableFuture.supplyAsync(() -> list);
