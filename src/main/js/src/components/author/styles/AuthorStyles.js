@@ -20,7 +20,6 @@ const AuthorsWrapper = styled.section`
 const AuthorsShowCaseWrapper = styled.ul`
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  border: 1px solid black;
   border-radius: 5px;
   li {
     text-align: center;
@@ -32,7 +31,7 @@ const AuthorsShowCaseWrapper = styled.ul`
 const AuthorsShowCaseButton = styled.button`
   border: none;
   cursor: pointer;
-  background-color: white;
+  background-color: #61dafb;
   
 `;
 

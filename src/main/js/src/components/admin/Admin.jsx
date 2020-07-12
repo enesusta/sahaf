@@ -1,6 +1,8 @@
 import React from "react";
 import {useAuthFetch} from "kanca/http";
 import {Facebook} from 'react-content-loader';
+import {AdminWrapper} from "./styles/AdminStyles";
+import AdminHeader from "./AdminHeader";
 
 const AdminNotFound = ({err}) => {
     return (
@@ -15,7 +17,9 @@ const Admin = () => {
         return <Facebook/>
 
     return (
-        <li>{JSON.stringify(error)}</li>
+        <AdminWrapper>
+            <AdminHeader />
+        </AdminWrapper>
     )
 };
 

@@ -1369,3 +1369,41 @@
 2020-07-12 20:16:15,388 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-8] JWT expired at 2020-07-12T15:56:19Z. Current time: 2020-07-12T17:16:15Z, a difference of 4796387 milliseconds.  Allowed clock skew: 0 milliseconds.
 2020-07-12 20:16:17,542 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-10] JWT strings must contain exactly 2 period characters. Found: 0
 2020-07-12 20:16:23,864 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-7] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:17:26,493 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-1] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:24:04,367 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-5] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:24:42,139 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-8] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:25:06,473 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-1] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:26:32,667 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-5] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:27:55,358 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-9] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:28:41,491 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 6708 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 20:28:41,495 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-12 20:28:48,867 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 8.34 seconds (JVM running for 10.966)
+2020-07-12 20:28:51,115 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-1] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:29:20,467 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-7] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:30:16,526 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-10] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:30:36,455 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-6] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:30:57,030 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-1] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:32:25,247 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-5] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:32:56,725 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-1] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:34:00,167 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-5] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:34:12,625 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-1] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:48:37,630 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-4] Get request on /author/all PATH
+2020-07-12 20:48:37,652 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-4] size 2
+2020-07-12 20:49:33,901 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-6] Get request on /author/all PATH
+2020-07-12 20:49:33,920 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-6] size 2
+2020-07-12 20:49:51,170 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-9] Get request on /author/all PATH
+2020-07-12 20:49:51,294 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-9] size 2
+2020-07-12 20:49:53,339 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-10] Get request on /author/all PATH
+2020-07-12 20:49:53,359 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-10] size 2
+2020-07-12 20:50:12,233 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-1] Get request on /author/all PATH
+2020-07-12 20:50:12,243 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-1] size 2
+2020-07-12 20:50:35,347 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-3] Get request on /author/all PATH
+2020-07-12 20:50:35,355 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-3] size 2
+2020-07-12 20:50:45,754 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-4] Get request on /author/all PATH
+2020-07-12 20:50:45,761 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-4] size 2
+2020-07-12 20:50:52,143 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-8] An author who attempt to get his/her information | username : enesusta
+2020-07-12 20:50:53,081 INFO com.github.enesusta.sahaf.book.repository.DefaultBookDTORepository [http-nio-8080-exec-2] An author attempts to get information of her/his books
+2020-07-12 20:50:58,060 INFO com.github.enesusta.sahaf.book.service.DefaultBookService [pool-1-thread-1] burada
+2020-07-12 20:50:58,093 INFO com.github.enesusta.sahaf.book.service.DefaultBookService [pool-1-thread-1] Accepted request Book(author=enesusta, isbn=f33592ce-e4c7-49b0-9a40-a463e1967a71, title=kitap2, language=FR, price=120, pages=12, createdDate=null)
+2020-07-12 20:50:58,768 INFO com.github.enesusta.sahaf.book.repository.DefaultBookDTORepository [http-nio-8080-exec-6] An author attempts to get information of her/his books
+2020-07-12 20:56:17,197 INFO com.github.enesusta.sahaf.book.repository.DefaultBookDTORepository [http-nio-8080-exec-8] An author attempts to get information of her/his books
