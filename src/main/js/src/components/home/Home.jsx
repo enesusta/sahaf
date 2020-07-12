@@ -2,6 +2,8 @@ import React from "react";
 import {useAuthFetch} from "kanca/http";
 import {Li} from "../styles/GeneralStyles";
 import {Facebook} from "react-content-loader";
+import {HomeWrapper} from "./styles/HomeStyles";
+import HomeHeader from "./HomeHeader";
 
 const NotDataFound = ({err}) => {
     return (
@@ -21,7 +23,10 @@ const Home = () => {
     }
 
     return (
-        <li>{JSON.stringify(data)}</li>
+        <HomeWrapper>
+            <HomeHeader/>
+            <li>{JSON.stringify(data)}</li>
+        </HomeWrapper>
     )
 
 };

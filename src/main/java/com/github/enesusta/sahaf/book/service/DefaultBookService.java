@@ -57,6 +57,11 @@ public class DefaultBookService implements BookService {
     }
 
     @Override
+    public Set<BookDTO> getAllBooks() {
+        return bookDTORepository.getAllBooks();
+    }
+
+    @Override
     public boolean update(Book book) {
         boolean isUpdated = false;
         boolean isAdded = false;

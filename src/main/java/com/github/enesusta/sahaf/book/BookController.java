@@ -32,6 +32,11 @@ public class BookController {
         bookService.save(book);
     }
 
+    @GetMapping("/all")
+    public CompletableFuture<Set<BookDTO>> getAllBooks() throws BookNotFoundException {
+        return CompletableFuture.supplyAsync(() -> bookService.getAllBooks());
+    }
+
     @GetMapping
     public CompletableFuture<Set<BookDTO>> getBooks() throws BookNotFoundException {
         final User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();

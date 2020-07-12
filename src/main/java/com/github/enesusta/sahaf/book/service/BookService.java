@@ -12,6 +12,8 @@ public interface BookService {
 
     Set<BookDTO> getBooks(String authorName);
 
+    Set<BookDTO> getAllBooks();
+
     boolean update(Book book);
 
     boolean delete(Book book);

@@ -6,4 +6,6 @@ import java.util.Set;
 
 public interface BookDTORepository {
     Set<BookDTO> getBooksOfTheAuthor(String authorName);
+
+    Set<BookDTO> getAllBooks();
 }
