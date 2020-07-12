@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Executor;
 
 
 @RestController
@@ -26,6 +27,7 @@ import java.util.concurrent.CompletableFuture;
 public class BookController {
 
     private final BookService bookService;
+    private final Executor executor;
 
     @PostMapping
     public void save(@RequestBody Book book) {
@@ -34,7 +36,7 @@ public class BookController {
 
     @GetMapping("/all")
     public CompletableFuture<Set<BookDTO>> getAllBooks() throws BookNotFoundException {
-        return CompletableFuture.supplyAsync(() -> bookService.getAllBooks());
+        return CompletableFuture.supplyAsync(bookService::getAllBooks, executor);
     }
 
     @GetMapping
@@ -45,18 +47,18 @@ public class BookController {
         /**
          * Null olamaz zira BookDTORepository içinde initialize ettim. dolayısı ile size'i check ediyorum.
          */
-        return CompletableFuture.supplyAsync(() -> books);
+        return CompletableFuture.supplyAsync(() -> books, executor);
     }
 
     @PutMapping
     public CompletableFuture<Boolean> updateBook(@RequestBody Book book) {
-        return CompletableFuture.supplyAsync(() -> bookService.update(book));
+        return CompletableFuture.supplyAsync(() -> bookService.update(book), executor);
     }
 
     @DeleteMapping
     public CompletableFuture<Boolean> deleteBook(@RequestBody Book book) {
         log.info("gelemiyor bile");
-        return CompletableFuture.supplyAsync(() -> bookService.delete(book));
+        return CompletableFuture.supplyAsync(() -> bookService.delete(book), executor);
     }
 
 }
