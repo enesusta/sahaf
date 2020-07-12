@@ -51,6 +51,8 @@ public class DefaultBookDTORepository implements BookDTORepository {
         final List<Author> current = authorRepository.findAll();
         final Set<BookDTO> dtoSet = new HashSet<>();
         current
+                .stream()
+                .filter(e -> e.getBooks() != null)
                 .forEach(e -> e.getBooks()
                         .stream()
                         .map(book -> {

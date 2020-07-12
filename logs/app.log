@@ -1283,3 +1283,89 @@
 2020-07-12 03:20:19,791 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-1] Get request on /author/all PATH
 2020-07-12 03:20:19,799 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-1] size 1
 2020-07-12 03:20:31,226 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-4] JWT expired at 2020-07-11T23:42:40Z. Current time: 2020-07-12T00:20:31Z, a difference of 2271225 milliseconds.  Allowed clock skew: 0 milliseconds.
+2020-07-12 17:55:23,629 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 7584 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 17:55:23,634 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-12 17:55:28,923 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 6.142 seconds (JVM running for 8.091)
+2020-07-12 17:55:37,754 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-2] JWT expired at 2020-07-11T23:42:40Z. Current time: 2020-07-12T14:55:37Z, a difference of 54777751 milliseconds.  Allowed clock skew: 0 milliseconds.
+2020-07-12 17:55:41,871 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-4] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-12 17:55:50,177 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-7] An author who attempt to get his/her information | username : enesusta
+2020-07-12 17:55:51,652 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-2] An author who attempt to get his/her information | username : enesusta
+2020-07-12 17:55:52,739 INFO com.github.enesusta.sahaf.book.repository.DefaultBookDTORepository [http-nio-8080-exec-5] An author attempts to get information of her/his books
+2020-07-12 17:55:56,150 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-7] An author who attempt to get his/her information | username : enesusta
+2020-07-12 17:55:56,983 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-10] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-12 17:56:11,225 INFO com.github.enesusta.sahaf.authentication.repository.DefaultAuthenticationRepository [http-nio-8080-exec-3] An author attempted to register..
+2020-07-12 17:56:19,715 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-5] An author who attempt to get his/her information | username : testuser1
+2020-07-12 17:56:19,979 ERROR com.github.enesusta.sahaf.book.BookControllerAdvice [http-nio-8080-exec-8] null
+2020-07-12 17:56:23,172 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-10] An author who attempt to get his/her information | username : testuser1
+2020-07-12 17:56:24,221 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-2] Get request on /author/all PATH
+2020-07-12 17:56:24,238 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-2] size 2
+2020-07-12 17:56:25,036 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-4] An author who attempt to get his/her information | username : testuser1
+2020-07-12 17:56:27,439 ERROR com.github.enesusta.sahaf.book.BookControllerAdvice [http-nio-8080-exec-8] null
+2020-07-12 17:57:18,309 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-9] Get request on /author/all PATH
+2020-07-12 17:57:18,315 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-9] size 2
+2020-07-12 17:57:24,374 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-3] Get request on /author/all PATH
+2020-07-12 17:57:24,387 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-3] size 2
+2020-07-12 17:57:52,275 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-8] Get request on /author/all PATH
+2020-07-12 17:57:52,283 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-8] size 2
+2020-07-12 17:57:55,421 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-2] Get request on /author/all PATH
+2020-07-12 17:57:55,428 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-2] size 2
+2020-07-12 17:58:04,236 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-5] Get request on /author/all PATH
+2020-07-12 17:58:04,245 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-5] size 2
+2020-07-12 17:58:09,734 ERROR com.github.enesusta.sahaf.book.BookControllerAdvice [http-nio-8080-exec-9] null
+2020-07-12 17:58:18,638 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-1] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-12 17:58:18,646 ERROR com.github.enesusta.sahaf.book.BookControllerAdvice [http-nio-8080-exec-2] null
+2020-07-12 17:58:29,074 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-4] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-12 17:58:29,083 ERROR com.github.enesusta.sahaf.book.BookControllerAdvice [http-nio-8080-exec-5] null
+2020-07-12 17:58:30,055 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-6] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-12 17:58:30,069 ERROR com.github.enesusta.sahaf.book.BookControllerAdvice [http-nio-8080-exec-7] null
+2020-07-12 17:58:30,806 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-8] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-12 17:58:30,819 ERROR com.github.enesusta.sahaf.book.BookControllerAdvice [http-nio-8080-exec-9] null
+2020-07-12 17:58:52,117 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-1] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-12 17:58:52,365 ERROR com.github.enesusta.sahaf.book.BookControllerAdvice [http-nio-8080-exec-2] null
+2020-07-12 17:58:53,231 ERROR com.github.enesusta.sahaf.book.BookControllerAdvice [http-nio-8080-exec-5] null
+2020-07-12 17:59:52,728 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 8476 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 17:59:52,735 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-12 17:59:57,498 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 5.418 seconds (JVM running for 6.905)
+2020-07-12 18:00:00,529 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-2] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-12 18:00:00,725 ERROR com.github.enesusta.sahaf.book.BookControllerAdvice [http-nio-8080-exec-3] null
+2020-07-12 18:00:51,151 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 11336 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 18:00:51,155 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
+2020-07-12 18:00:55,891 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 5.36 seconds (JVM running for 6.716)
+2020-07-12 18:00:57,079 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-2] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-12 18:00:59,252 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-4] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-12 18:01:03,852 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-10] Get request on /author/all PATH
+2020-07-12 18:01:03,864 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-10] size 2
+2020-07-12 18:01:08,932 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-3] An author who attempt to get his/her information | username : testuser1
+2020-07-12 18:01:20,541 INFO com.github.enesusta.sahaf.book.service.DefaultBookService [http-nio-8080-exec-6] New book added ID testuser1
+2020-07-12 18:01:20,635 INFO com.github.enesusta.sahaf.book.repository.DefaultBookDTORepository [http-nio-8080-exec-7] An author attempts to get information of her/his books
+2020-07-12 18:01:22,793 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-9] Get request on /author/all PATH
+2020-07-12 18:01:22,822 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-9] size 2
+2020-07-12 18:01:34,067 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-4] An author who attempt to get his/her information | username : testuser1
+2020-07-12 18:01:34,989 INFO com.github.enesusta.sahaf.book.repository.DefaultBookDTORepository [http-nio-8080-exec-7] An author attempts to get information of her/his books
+2020-07-12 18:01:40,312 INFO com.github.enesusta.sahaf.book.service.DefaultBookService [pool-1-thread-5] burada
+2020-07-12 18:01:40,313 INFO com.github.enesusta.sahaf.book.service.DefaultBookService [pool-1-thread-5] Accepted request Book(author=testuser1, isbn=994646ac-1ed6-4500-891f-1d5bd8c65400, title=kitap4, language=EN, price=50 TL, pages=25, createdDate=null)
+2020-07-12 18:01:41,221 INFO com.github.enesusta.sahaf.book.repository.DefaultBookDTORepository [http-nio-8080-exec-1] An author attempts to get information of her/his books
+2020-07-12 18:03:17,531 INFO com.github.enesusta.sahaf.book.repository.DefaultBookDTORepository [http-nio-8080-exec-4] An author attempts to get information of her/his books
+2020-07-12 18:03:20,540 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-8] Get request on /author/all PATH
+2020-07-12 18:03:20,550 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-8] size 2
+2020-07-12 18:03:21,594 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-10] An author who attempt to get his/her information | username : testuser1
+2020-07-12 18:03:22,431 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-2] Get request on /author/all PATH
+2020-07-12 18:03:22,441 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-2] size 2
+2020-07-12 18:21:13,540 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-9] Get request on /author/all PATH
+2020-07-12 18:21:13,546 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-9] size 2
+2020-07-12 18:21:16,841 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-2] Get request on /author/all PATH
+2020-07-12 18:21:16,858 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-2] size 2
+2020-07-12 18:41:16,308 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-1] Get request on /author/all PATH
+2020-07-12 18:41:16,318 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-1] size 2
+2020-07-12 18:41:19,757 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-7] Get request on /author/all PATH
+2020-07-12 18:41:19,767 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-7] size 2
+2020-07-12 18:41:21,471 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-10] Get request on /author/all PATH
+2020-07-12 18:41:21,481 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-10] size 2
+2020-07-12 18:41:21,847 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-2] An author who attempt to get his/her information | username : testuser1
+2020-07-12 18:41:22,957 INFO com.github.enesusta.sahaf.book.repository.DefaultBookDTORepository [http-nio-8080-exec-5] An author attempts to get information of her/his books
+2020-07-12 18:41:24,916 INFO com.github.enesusta.sahaf.book.repository.DefaultBookDTORepository [http-nio-8080-exec-6] An author attempts to get information of her/his books
+2020-07-12 18:41:25,323 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-7] An author who attempt to get his/her information | username : testuser1
+2020-07-12 20:04:03,928 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-4] JWT expired at 2020-07-12T15:56:19Z. Current time: 2020-07-12T17:04:03Z, a difference of 4064793 milliseconds.  Allowed clock skew: 0 milliseconds.
+2020-07-12 20:16:15,388 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-8] JWT expired at 2020-07-12T15:56:19Z. Current time: 2020-07-12T17:16:15Z, a difference of 4796387 milliseconds.  Allowed clock skew: 0 milliseconds.
+2020-07-12 20:16:17,542 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-10] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-12 20:16:23,864 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-7] An author who attempt to get his/her information | username : enesusta

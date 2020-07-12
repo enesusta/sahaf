@@ -10,4 +10,5 @@ public interface AuthorService {
     Supplier<Author> findByFullName(String fullName);
     Supplier<AuthorDTO> findByNamePathQuery(String fullName);
     List<AuthorDTO> getAll();
+    void update(Author author);
 }

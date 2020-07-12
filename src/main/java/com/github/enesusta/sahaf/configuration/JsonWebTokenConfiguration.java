@@ -27,6 +27,9 @@ public class JsonWebTokenConfiguration {
      - jdbc-starter
      - mongodb-starter
 
+     Yazmis oldugum tum kutuphanelere(maven uzerindeki kutuphanelerime) goz atmak icin:
+     https://search.maven.org/search?q=com.github.enesusta
+
      Söz konusu proje OSSRH (  https://central.sonatype.org/pages/ossrh-guide.html ) üzerinden maven central'a deploy edildi.
      pom.xml uzerinde dikkat ederseniz;
 

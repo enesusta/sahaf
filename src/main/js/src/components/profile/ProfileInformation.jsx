@@ -32,7 +32,7 @@ const ProfileInformation = () => {
             <ProfileTabHeader>Bilgilerim</ProfileTabHeader>
             <ProfileTabForm>
                 <ProfileTabLabel>Yazar İsmi</ProfileTabLabel>
-                <ProfileTabInput defaultValue={data.fullName}/>
+                <ProfileTabInput defaultValue={data.fullName} readOnly/>
                 <ProfileTabLabel>Edebi Akım</ProfileTabLabel>
                 <ProfileTabInput defaultValue={data.literary}/>
                 <ProfileTabLabel>Doğum Yılı</ProfileTabLabel>

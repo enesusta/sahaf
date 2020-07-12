@@ -8,6 +8,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -44,6 +46,11 @@ public class AuthorController {
         log.info("size {}", list.size());
         if (list.size() == 0 || list == null) throw new AuthorNotFoundException();
         return CompletableFuture.supplyAsync(() -> list, executor);
+    }
+
+    @PutMapping
+    public final CompletableFuture<Void> updateAuthor(@RequestBody Author author) {
+        return CompletableFuture.runAsync(() -> authorService.update(author), executor);
     }
 
 

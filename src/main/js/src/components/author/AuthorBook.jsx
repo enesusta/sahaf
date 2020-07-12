@@ -13,7 +13,7 @@ const AuthorBook = ({books}) => {
                 <div className="col col-4">Sayfa Sayısı</div>
                 <div className="col col-5">Fiyat</div>
             </li>
-            {books.length
+            {books
                 ? books.map((e, i) => {
                     return (
                         <li className="table-row" key={i}>
@@ -29,7 +29,7 @@ const AuthorBook = ({books}) => {
                             <div className="col col-4" data-label="fiyat">
                                 {e.pages}
                             </div>
-                            <div className="col col-5" data-label="fiyat">
+                            <div className="col col-5" data-label="sayfa">
                                 {e.price}
                             </div>
                         </li>
