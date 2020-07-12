@@ -12,7 +12,7 @@ const NotDataFound = ({err}) => {
 };
 
 const Home = () => {
-    const {data, isLoading, error} = useAuthFetch('/author/all');
+    const {data, isLoading, error} = useAuthFetch('/book/all');
 
     if (isLoading) {
         return <Facebook/>

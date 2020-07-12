@@ -1279,3 +1279,7 @@
 2020-07-12 03:15:03,103 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Starting MongoProjectApplication on DESKTOP-B3CNSC5 with PID 10736 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
 2020-07-12 03:15:03,110 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] No active profile set, falling back to default profiles: default
 2020-07-12 03:15:11,910 INFO com.github.enesusta.sahaf.MongoProjectApplication [main] Started MongoProjectApplication in 9.455 seconds (JVM running for 11.366)
+2020-07-12 03:20:19,788 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-1] JWT expired at 2020-07-11T23:42:40Z. Current time: 2020-07-12T00:20:19Z, a difference of 2259786 milliseconds.  Allowed clock skew: 0 milliseconds.
+2020-07-12 03:20:19,791 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-1] Get request on /author/all PATH
+2020-07-12 03:20:19,799 INFO com.github.enesusta.sahaf.author.AuthorController [http-nio-8080-exec-1] size 1
+2020-07-12 03:20:31,226 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-4] JWT expired at 2020-07-11T23:42:40Z. Current time: 2020-07-12T00:20:31Z, a difference of 2271225 milliseconds.  Allowed clock skew: 0 milliseconds.
