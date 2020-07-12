@@ -7,8 +7,8 @@ const AdminHeader = () => {
 
     return (
         <Li>
-            Aşağıdaki tablo üzerinde sistemde kayıtlı olan tüm kullanıcıları görmektesiniz.
-            Kullanıcıların yetkilerini silebilir, düzenleyebilirsiniz. Ayrıca kitaplarını silebilmektesiniz.
+            Aşağıdaki tablo üzerinde sistemde kayıtlı olan tüm kullanıcıları görmektesiniz.<br/><br/>
+            Kullanıcıların yetkilerini silebilir, düzenleyebilirsiniz. Ayrıca kitaplarını güncelleyebilir yahut silebilmektesiniz.
         </Li>
     );
 };

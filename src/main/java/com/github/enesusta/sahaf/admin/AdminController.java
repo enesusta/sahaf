@@ -25,6 +25,7 @@ public class AdminController {
 
     @GetMapping
     public CompletableFuture<Set<Author>> getAll() {
+        log.info("GET request on /admin PATH");
         return CompletableFuture.supplyAsync(adminService::getAll, executor);
     }
 

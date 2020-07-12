@@ -17,7 +17,6 @@ public class UserDetailsServiceConfiguration {
     private final SahafUserDetailsService sahafUserDetailsService;
 
     @Bean
-    @Profile("prod")
     public UserDetailsService userDetailsService() {
         return sahafUserDetailsService;
     }

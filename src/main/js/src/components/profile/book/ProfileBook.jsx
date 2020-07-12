@@ -11,8 +11,20 @@ import {Button} from "../../styles/GeneralStyles";
 import axios from 'axios';
 import httpHeader from "../../../http/header";
 
-const ProfileBook = ({bookProp}) => {
-    const [book, setBook] = useState({...bookProp, author: `${localStorage.getItem('user')}`});
+const ProfileBook = ({bookProp, who, update, del}) => {
+
+    const localStorageObject = {
+        ...bookProp,
+        author: `${localStorage.getItem('user')}`
+    };
+
+    const authorObject = {
+        ...bookProp,
+        author: who
+    }
+
+    const initialState = who ? authorObject : localStorageObject;
+    const [book, setBook] = useState(initialState);
 
     const titleHandler = e => {
         setBook({...book, title: e.target.value});
@@ -32,8 +44,12 @@ const ProfileBook = ({bookProp}) => {
 
     const updateHandler = e => {
 
+        e.preventDefault();
+
         if (window.confirm('Ilgili kayıt güncellenecektir , onaylıyor musunuz?')) {
             const url = `${process.env.REACT_APP_API}/book`;
+
+            console.log(book);
 
             axios
                 .put(url, book, httpHeader)
@@ -94,8 +110,8 @@ const ProfileBook = ({bookProp}) => {
                 <ProfileTabInput
                     defaultValue={bookProp.pages}
                     onChange={pagesHandler}/>
-                <Button width={100} color='#afe34f' hov='#c7ec83' onClick={updateHandler}>Güncelle</Button>
-                <Button width={100} color='#ff475a' hov='#ff8591' onClick={deleteHandler}>Sil</Button>
+                <Button width={100} color='#afe34f' hov='#c7ec83' onClick={updateHandler}>{update}</Button>
+                <Button width={100} color='#ff475a' hov='#ff8591' onClick={deleteHandler}>{del}</Button>
             </ProfileTabForm>
         </>
     );

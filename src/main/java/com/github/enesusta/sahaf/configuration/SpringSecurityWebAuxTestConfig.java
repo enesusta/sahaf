@@ -16,7 +16,6 @@ import java.util.List;
 public class SpringSecurityWebAuxTestConfig {
 
     @Bean
-    @Profile("test")
     public UserDetailsService userDetailsService() {
 
         final SimpleGrantedAuthority BOOK_WRITE = new SimpleGrantedAuthority("BOOK_WRITE");
