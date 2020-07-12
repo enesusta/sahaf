@@ -3,7 +3,7 @@ package com.github.enesusta.sahaf.configuration;
 import com.github.enesusta.sahaf.security.UserImpl;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -12,10 +12,11 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import java.util.List;
 
 @TestConfiguration
+@Profile("test")
 public class SpringSecurityWebAuxTestConfig {
 
     @Bean
-    @Primary
+    @Profile("test")
     public UserDetailsService userDetailsService() {
 
         final SimpleGrantedAuthority BOOK_WRITE = new SimpleGrantedAuthority("BOOK_WRITE");

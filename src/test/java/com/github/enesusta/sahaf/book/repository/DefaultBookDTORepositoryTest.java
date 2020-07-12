@@ -20,7 +20,7 @@ class DefaultBookDTORepositoryTest {
     private BookDTORepository bookDTORepository;
 
     @Test
-    void shouldReturnAuthorNameOfGivenParameter() {
+    public void shouldReturnAuthorNameOfGivenParameter() {
         BookDTO user1 = new BookDTO();
         user1.setAuthor("user1");
 
@@ -33,7 +33,7 @@ class DefaultBookDTORepositoryTest {
     }
 
     @Test
-    void shouldReturnRightAuthorGivenParameter() throws InterruptedException {
+    public void shouldReturnRightAuthorGivenParameter() throws InterruptedException {
         BookDTO book1 = new BookDTO();
         book1.setAuthor("enesusta");
         book1.setIsbn("1");

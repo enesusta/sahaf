@@ -1407,3 +1407,65 @@
 2020-07-12 20:50:58,093 INFO com.github.enesusta.sahaf.book.service.DefaultBookService [pool-1-thread-1] Accepted request Book(author=enesusta, isbn=f33592ce-e4c7-49b0-9a40-a463e1967a71, title=kitap2, language=FR, price=120, pages=12, createdDate=null)
 2020-07-12 20:50:58,768 INFO com.github.enesusta.sahaf.book.repository.DefaultBookDTORepository [http-nio-8080-exec-6] An author attempts to get information of her/his books
 2020-07-12 20:56:17,197 INFO com.github.enesusta.sahaf.book.repository.DefaultBookDTORepository [http-nio-8080-exec-8] An author attempts to get information of her/his books
+2020-07-12 23:20:03,560 INFO com.github.enesusta.sahaf.MongoProjectApplicationTests [main] Starting MongoProjectApplicationTests on DESKTOP-B3CNSC5 with PID 15152 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:20:03,563 INFO com.github.enesusta.sahaf.MongoProjectApplicationTests [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:20:20,437 INFO com.github.enesusta.sahaf.MongoProjectApplicationTests [main] Started MongoProjectApplicationTests in 17.983 seconds (JVM running for 27.739)
+2020-07-12 23:44:19,728 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 14584 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:44:19,731 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:44:21,125 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 14584 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:44:21,126 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:45:23,627 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 8788 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:45:23,630 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:45:25,007 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 8788 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:45:25,008 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:46:41,353 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 7792 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:46:41,355 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:46:42,733 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 7792 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:46:42,734 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:47:00,423 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 9112 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:47:00,427 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:47:02,271 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 9112 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:47:02,272 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:48:55,209 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 14936 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:48:55,212 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:48:56,635 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 14936 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:48:56,636 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:50:32,353 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 14428 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:50:32,356 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:50:33,207 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 14428 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:50:33,209 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] No active profile set, falling back to default profiles: default
+2020-07-12 23:53:32,301 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 14452 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:53:32,303 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-12 23:53:33,636 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 14452 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:53:33,637 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-12 23:55:59,740 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 3408 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:55:59,741 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-12 23:56:01,124 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 3408 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:56:01,125 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-12 23:57:19,688 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 4924 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:57:19,690 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-12 23:57:20,993 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 4924 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:57:20,993 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-12 23:58:10,614 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 2100 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:58:10,616 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-12 23:58:12,011 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 2100 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:58:12,012 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-12 23:59:29,647 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 6428 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:59:29,648 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-12 23:59:31,043 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 6428 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-12 23:59:31,043 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-13 00:01:07,816 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 12004 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 00:01:07,825 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-13 00:01:09,184 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 12004 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 00:01:09,185 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-13 00:01:49,815 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 7028 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 00:01:49,817 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-13 00:01:51,176 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 7028 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 00:01:51,177 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-13 00:09:04,008 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 7380 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 00:09:04,009 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-13 00:09:13,199 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 7380 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 00:09:13,200 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-13 00:10:14,512 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 2600 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 00:10:14,513 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-13 00:10:24,199 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Started AuthenticationControllerTest in 10.447 seconds (JVM running for 13.164)
