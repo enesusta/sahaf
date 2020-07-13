@@ -1696,3 +1696,12 @@
 2020-07-13 03:26:19,913 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 8200 (started by Enes in C:\Users\Enes\projects\mongo-project)
 2020-07-13 03:26:19,914 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
 2020-07-13 03:26:38,818 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Started AuthenticationControllerTest in 20.104 seconds (JVM running for 26.425)
+2020-07-13 04:24:11,897 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Starting SahafApplication on DESKTOP-B3CNSC5 with PID 8148 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 04:24:11,900 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] The following profiles are active: prod
+2020-07-13 04:24:16,932 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Started SahafApplication in 5.656 seconds (JVM running for 7.303)
+2020-07-13 04:42:30,312 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Starting SahafApplication on DESKTOP-B3CNSC5 with PID 13712 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 04:42:30,316 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] The following profiles are active: prod
+2020-07-13 04:43:04,141 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Started SahafApplication in 34.415 seconds (JVM running for 35.902)
+2020-07-13 04:43:09,826 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Starting SahafApplication on DESKTOP-B3CNSC5 with PID 13304 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 04:43:09,830 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] The following profiles are active: prod
+2020-07-13 04:43:16,019 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Started SahafApplication in 6.756 seconds (JVM running for 8.4)

@@ -52,7 +52,10 @@ public class JsonWebTokenConfiguration {
 
     @Bean
     public JsonWebTokenManager jsonWebTokenManager() {
-        return new JsonWebTokenManager(secretKey, 1000 * 60 * 60);
+        return new JsonWebTokenManager(secretKey, 1000 * 60 * 60 * 24 * 2);
+        /**
+         * ciddi bir guvenlik ve renew gerekmedigi icin token 2 gun boyunca gecerli.
+         */
     }
 
 }

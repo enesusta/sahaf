@@ -44,6 +44,7 @@ const ProfileBook = ({bookProp, who, update, del}) => {
 
     const updateHandler = e => {
 
+        e.preventDefault();
 
         if (window.confirm('Ilgili kayıt güncellenecektir , onaylıyor musunuz?')) {
             const url = `${process.env.REACT_APP_API}/book`;
@@ -54,6 +55,7 @@ const ProfileBook = ({bookProp, who, update, del}) => {
                 .put(url, book, httpHeader)
                 .then(res => {
                     console.log(res.data);
+                    window.location.reload();
                 })
                 .catch(err => {
                     console.log(err.response)
@@ -63,7 +65,9 @@ const ProfileBook = ({bookProp, who, update, del}) => {
 
     }
 
-    const deleteHandler = () => {
+    const deleteHandler = e => {
+
+        e.preventDefault();
 
         if (window.confirm('Bu kitabı silmek istediğinizden emin misiniz?')) {
             const url = `${process.env.REACT_APP_API}/book`;
@@ -78,7 +82,8 @@ const ProfileBook = ({bookProp, who, update, del}) => {
             axios
                 .delete(url, body)
                 .then(res => {
-                    console.log(res.data)
+                    console.log(res.data);
+                    window.location.reload();
                 })
                 .catch(err => {
                     console.log(err.response)
