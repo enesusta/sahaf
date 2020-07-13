@@ -32,8 +32,8 @@ public class AdminController {
     }
 
     @DeleteMapping
-    public CompletableFuture<Void> deleteAuthor(@RequestParam String name) {
-        return CompletableFuture.runAsync(() -> adminService.deleteAuthor(name), executor);
+    public CompletableFuture<Void> deleteAuthor(@RequestBody Author author) {
+        return CompletableFuture.runAsync(() -> adminService.deleteAuthor(author), executor);
     }
 
     @PutMapping

@@ -1654,3 +1654,42 @@
 2020-07-13 02:53:11,313 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-4] GET request on /admin PATH
 2020-07-13 02:53:27,213 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-5] GET request on /admin PATH
 2020-07-13 02:56:18,885 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-10] GET request on /admin PATH
+2020-07-13 03:07:41,227 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-3] GET request on /admin PATH
+2020-07-13 03:08:23,755 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-7] GET request on /admin PATH
+2020-07-13 03:08:57,176 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Starting SahafApplication on DESKTOP-B3CNSC5 with PID 10676 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 03:08:57,180 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] The following profiles are active: prod
+2020-07-13 03:09:03,869 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Started SahafApplication in 7.3 seconds (JVM running for 9.4)
+2020-07-13 03:09:06,150 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-2] GET request on /admin PATH
+2020-07-13 03:09:45,654 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-8] An author who attempt to get his/her information | username : enesusta
+2020-07-13 03:09:45,690 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-8] GET request on /admin PATH
+2020-07-13 03:10:00,711 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-1] GET request on /admin PATH
+2020-07-13 03:10:07,761 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-4] GET request on /admin PATH
+2020-07-13 03:10:46,580 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-10] GET request on /admin PATH
+2020-07-13 03:10:49,236 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-2] GET request on /admin PATH
+2020-07-13 03:11:24,501 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-8] An author who attempt to get his/her information | username : enesusta
+2020-07-13 03:11:24,517 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-8] GET request on /admin PATH
+2020-07-13 03:11:37,450 INFO com.github.enesusta.sahaf.book.BookController [http-nio-8080-exec-1] gelemiyor bile
+2020-07-13 03:11:37,943 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-4] GET request on /admin PATH
+2020-07-13 03:11:55,005 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-7] GET request on /admin PATH
+2020-07-13 03:13:53,088 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-1] GET request on /admin PATH
+2020-07-13 03:19:05,512 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-5] JWT expired at 2020-07-13T00:14:30Z. Current time: 2020-07-13T00:19:05Z, a difference of 275509 milliseconds.  Allowed clock skew: 0 milliseconds.
+2020-07-13 03:19:26,857 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Starting SahafApplication on DESKTOP-B3CNSC5 with PID 15756 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 03:19:26,862 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] The following profiles are active: prod
+2020-07-13 03:19:32,072 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Started SahafApplication in 5.848 seconds (JVM running for 7.414)
+2020-07-13 03:19:48,694 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-2] JWT expired at 2020-07-13T00:14:30Z. Current time: 2020-07-13T00:19:48Z, a difference of 318692 milliseconds.  Allowed clock skew: 0 milliseconds.
+2020-07-13 03:19:50,890 ERROR com.github.enesusta.sahaf.authentication.AuthenticationFilter [http-nio-8080-exec-4] JWT strings must contain exactly 2 period characters. Found: 0
+2020-07-13 03:19:55,703 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [http-nio-8080-exec-1] An author who attempt to get his/her information | username : enesusta
+2020-07-13 03:19:58,934 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-4] GET request on /admin PATH
+2020-07-13 03:20:11,799 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-8] GET request on /admin PATH
+2020-07-13 03:20:35,263 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-2] GET request on /admin PATH
+2020-07-13 03:22:34,563 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Starting SahafApplication on DESKTOP-B3CNSC5 with PID 15848 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 03:22:34,566 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] The following profiles are active: prod
+2020-07-13 03:22:39,482 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Started SahafApplication in 5.495 seconds (JVM running for 7.002)
+2020-07-13 03:22:42,959 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-2] GET request on /admin PATH
+2020-07-13 03:22:45,708 INFO com.github.enesusta.sahaf.author.service.DefaultAuthorService [pool-1-thread-2] An author who attempt to get his/her information | username : testuser1
+2020-07-13 03:22:46,281 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-7] GET request on /admin PATH
+2020-07-13 03:23:50,415 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Starting SahafApplication on DESKTOP-B3CNSC5 with PID 12040 (C:\Users\Enes\projects\mongo-project\target\classes started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 03:23:50,418 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] The following profiles are active: prod
+2020-07-13 03:23:55,385 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Started SahafApplication in 5.55 seconds (JVM running for 7.013)
+2020-07-13 03:23:59,014 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-2] GET request on /admin PATH
+2020-07-13 03:24:05,570 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-7] GET request on /admin PATH

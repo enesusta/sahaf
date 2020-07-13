@@ -4,6 +4,7 @@ import com.github.enesusta.sahaf.authentication.cache.AuthenticationCacheService
 import com.github.enesusta.sahaf.author.Author;
 import com.github.enesusta.sahaf.author.repository.AuthorRepository;
 import com.github.enesusta.sahaf.author.service.AuthorService;
+import com.mongodb.client.result.DeleteResult;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -20,21 +21,13 @@ import java.util.Set;
 @RequiredArgsConstructor
 public class DefaultAdminService implements AdminService {
 
-    private final AuthorService authorService;
     private final AuthorRepository authorRepository;
     private final MongoTemplate mongoTemplate;
     private AuthenticationCacheService authenticationCacheService;
 
-    @Override
-    public void deleteAuthor(String name) {
-        final Author author = authorService.findByFullName(name).get();
-        authorRepository.delete(author);
-    }
 
     @Override
     public void updateAuthor(Author author) {
-        boolean isUpdated = false;
-
         final Query findByNameQuery = Query.query(Criteria.where("fullName").is(author.getFullName()));
 
         final Update update = new Update();
@@ -50,6 +43,12 @@ public class DefaultAdminService implements AdminService {
          * AuthenticationFilter icinde her bir request' uzere gelen istek cache'lenen veri ile islem goruyor.
          * Dolayisi ile role'u degisen bir kullanici yetkisi oldugu halde kaynaga erisemeyebilir. gibi gibi.
          */
+    }
+
+    @Override
+    public void deleteAuthor(Author author) {
+        final Query findByNameQuery = Query.query(Criteria.where("fullName").is(author.getFullName()));
+        mongoTemplate.remove(findByNameQuery, Author.class);
     }
 
     @Override

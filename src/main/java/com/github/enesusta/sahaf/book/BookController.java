@@ -57,7 +57,6 @@ public class BookController {
 
     @DeleteMapping
     public CompletableFuture<Boolean> deleteBook(@RequestBody Book book) {
-        log.info("gelemiyor bile");
         return CompletableFuture.supplyAsync(() -> bookService.delete(book), executor);
     }
 

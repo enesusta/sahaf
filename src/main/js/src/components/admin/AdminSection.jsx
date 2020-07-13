@@ -78,13 +78,12 @@ const AdminSection = ({user}) => {
 
     const userUpdateHandler = e => {
 
-        e.preventDefault();
-
         let rolesData = roles ? roles : user.roles;
         let literaryData = literary ? literary : user.literary;
         let birthdayData = birthday ? birthday : user.birthday;
 
         if (window.confirm('Kullanıcı bilgileri güncellenecektir. Onaylıyor musunuz?')) {
+            const url = `${process.env.REACT_APP_API}/admin`;
 
             const body = {
                 fullName: user.fullName,
@@ -94,8 +93,44 @@ const AdminSection = ({user}) => {
             }
 
             console.log(body);
+
+            axios
+                .put(url, body, httpHeader)
+                .then(res => {
+
+                })
+                .catch(err => {
+                    console.log(err.response)
+                });
         }
     }
+
+    const userDeleteHandler = () => {
+
+        if (window.confirm('Bu kullanıcı silmek istediğinizden emin misiniz?')) {
+            const url = `${process.env.REACT_APP_API}/admin`;
+
+            const body = {
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem('token')}`
+                },
+                data: {
+                    fullName: user.fullName
+                }
+            }
+
+            axios
+                .delete(url, body)
+                .then(res => {
+
+                })
+                .catch(err => {
+                    console.log(err.response)
+                });
+        }
+
+    }
+
 
     return (
         <AdminSectionWrapper>
@@ -126,7 +161,7 @@ const AdminSection = ({user}) => {
 
                 <Button width={100} color='#afe34f' hov='#c7ec83' onClick={userUpdateHandler}>Kullanıcı Bilgilerini
                     Güncelle</Button>
-                <Button width={100} color='#ff475a' hov='#ff8591' onClick={deleteHandler}>Kullanıcıyı Sil</Button>
+                <Button width={100} color='#ff475a' hov='#ff8591' onClick={userDeleteHandler}>Kullanıcıyı Sil</Button>
             </ProfileTabForm>
         </AdminSectionWrapper>
     );
