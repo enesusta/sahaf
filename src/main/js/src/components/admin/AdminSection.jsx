@@ -36,47 +36,10 @@ const AdminSection = ({user}) => {
     };
 
 
-    const updateHandler = e => {
-
-        if (window.confirm('Ilgili kayıt güncellenecektir , onaylıyor musunuz?')) {
-            const url = `${process.env.REACT_APP_API}/user`;
-
-            axios
-                .put(url, user, httpHeader)
-                .then(res => {
-                    console.log(res.data);
-                })
-                .catch(err => {
-                    console.log(err.response)
-                });
-        }
-
-    }
-
-    const deleteHandler = () => {
-
-        if (window.confirm('Bu kitabı silmek istediğinizden emin misiniz?')) {
-            const url = `${process.env.REACT_APP_API}/user`;
-
-            const body = {
-                headers: {
-                    Authorization: `Bearer ${localStorage.getItem('token')}`
-                },
-                data: user
-            }
-
-            axios
-                .delete(url, body)
-                .then(res => {
-                    console.log(res.data)
-                })
-                .catch(err => {
-                    console.log(err.response)
-                });
-        }
-    }
 
     const userUpdateHandler = e => {
+
+        e.preventDefault();
 
         let rolesData = roles ? roles : user.roles;
         let literaryData = literary ? literary : user.literary;
@@ -97,7 +60,7 @@ const AdminSection = ({user}) => {
             axios
                 .put(url, body, httpHeader)
                 .then(res => {
-
+                    window.location.reload();
                 })
                 .catch(err => {
                     console.log(err.response)
@@ -105,7 +68,9 @@ const AdminSection = ({user}) => {
         }
     }
 
-    const userDeleteHandler = () => {
+    const userDeleteHandler = e => {
+
+        e.preventDefault();
 
         if (window.confirm('Bu kullanıcı silmek istediğinizden emin misiniz?')) {
             const url = `${process.env.REACT_APP_API}/admin`;
@@ -122,7 +87,7 @@ const AdminSection = ({user}) => {
             axios
                 .delete(url, body)
                 .then(res => {
-
+                    window.location.reload();
                 })
                 .catch(err => {
                     console.log(err.response)

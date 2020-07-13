@@ -43,6 +43,8 @@ public class RedisDataSourceConfiguration {
     @Bean
     public JedisPool jedisPool() {
         final RedisConfiguration redisConfiguration = new RedisConfiguration.RedisCongurationBuilder()
+                .port(6379)
+                .host("100.25.179.179")
                 .password(password)
                 .build();
 
