@@ -21,10 +21,9 @@ public class RemoveAuthenticationCacheService implements AuthenticationCacheServ
     }
 
     @Override
-    public void removeCache(String username) {
+    public void flushAll() {
         try (Jedis jedis = jedisPool.getResource()) {
-            jedis.set(username, null);
-            log.info(jedis.get(username));
+            jedis.flushAll();
         } catch (JedisException e) {
             log.error(e.getMessage());
         }

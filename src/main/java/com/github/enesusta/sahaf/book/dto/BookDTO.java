@@ -5,6 +5,7 @@ import lombok.Data;
 @Data
 public class BookDTO {
 
+    private String author;
     private String isbn;
     private String title;
     private String language;

@@ -26,6 +26,9 @@ const Navbar = () => {
                     <img src={click ? burger : close} alt="" />
                 </button>
                 <nav className="navbar-links">
+                    <Link to="/">
+                        <button className="navbar-link">Anasayfa</button>
+                    </Link>
                     <Link to="/authors">
                         <button className="navbar-link">Yazarlar</button>
                     </Link>

@@ -51,9 +51,8 @@ public class DefaultAuthenticationCacheService implements AuthenticationCacheSer
     }
 
     @Override
-    public void removeCache(String username) {
-
-
-
+    public void flushAll() {
     }
+
+
 }

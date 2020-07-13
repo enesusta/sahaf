@@ -1,10 +1,14 @@
 import React from "react";
 import {useAuthFetch} from "kanca/http";
 import {Facebook} from 'react-content-loader';
+import {AdminWrapper} from "./styles/AdminStyles";
+import AdminHeader from "./AdminHeader";
+import AdminSection from "./AdminSection";
+import {Li} from "../styles/GeneralStyles";
 
 const AdminNotFound = ({err}) => {
     return (
-        <li>{err.data} : Hata Kodu: {err.status}</li>
+        <Li>Hata Kodu: <strong>{err.status}</strong></Li>
     )
 }
 
@@ -14,10 +18,20 @@ const Admin = () => {
     if (isLoading)
         return <Facebook/>
 
-
+    if (error)
+        return <AdminNotFound err={error}/>
 
     return (
-        <li>{JSON.stringify(error)}</li>
+        <AdminWrapper>
+            <AdminHeader/>
+            {
+                data.map((e, i) => {
+                    return (
+                        <AdminSection user={e} key={i}/>
+                    );
+                })
+            }
+        </AdminWrapper>
     )
 };
 

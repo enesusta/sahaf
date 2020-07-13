@@ -1,9 +1,9 @@
 import React from 'react';
-import {useAuthFetch} from "kanca/http";
 import {AuthorsWrapper} from "./styles/AuthorStyles";
 import {Facebook} from "react-content-loader";
 import AuthorsShowCase from "./AuthorsShowcase";
 import styled from "styled-components";
+import {useFetch} from "kanca/http";
 
 const Li = styled.li`
   margin-top: 100px;
@@ -20,7 +20,7 @@ const AuthorsNotFound = ({err}) => {
 };
 
 const Authors = () => {
-    const {data, isLoading, error} = useAuthFetch('/author/all')
+    const {data, isLoading, error} = useFetch('/author/all');
 
 
     if (isLoading) {
