@@ -1,0 +1,40 @@
+version: '3.1'
+
+services:
+  backend:
+    container_name: sahaf-backend
+    image: enesusta/sahaf:1.0
+    ports:
+      - '8080:8080'
+
+  frontend:
+    container_name: sahaf-frontend
+    image: enesusta/sahaf-frontend:1.0
+    ports:
+      - '81:80'
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: <secret>
+      MONGO_INITDB_ROOT_PASSWORD: <secret>
+
+    ports:
+      - 27017:27017
+    volumes:
+      - my-mongo
+
+  redis:
+    container_name: redis_container
+    image: redis
+    restart: always
+    command: redis-server --requirepass <secret>
+    ports:
+      - '6379:6379'
+    volumes:
+      - my-redis:/data
+  volumes:
+    my-redis:
+    my-mongo:

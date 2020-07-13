@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.github.enesusta.sahaf</groupId>
     <artifactId>sahaf</artifactId>
-    <version>1.0.3</version>
+    <version>1.1.0</version>
     <name>sahaf</name>
     <description>Demo project for Spring Boot</description>
 

@@ -3,8 +3,6 @@ package com.github.enesusta.sahaf.admin.service;
 import com.github.enesusta.sahaf.authentication.cache.AuthenticationCacheService;
 import com.github.enesusta.sahaf.author.Author;
 import com.github.enesusta.sahaf.author.repository.AuthorRepository;
-import com.github.enesusta.sahaf.author.service.AuthorService;
-import com.mongodb.client.result.DeleteResult;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -24,7 +22,6 @@ public class DefaultAdminService implements AdminService {
     private final AuthorRepository authorRepository;
     private final MongoTemplate mongoTemplate;
     private AuthenticationCacheService authenticationCacheService;
-
 
     @Override
     public void updateAuthor(Author author) {
@@ -55,7 +52,6 @@ public class DefaultAdminService implements AdminService {
     public Set<Author> getAll() {
         return new HashSet<>(authorRepository.findAll());
     }
-
 
     @Autowired
     @Qualifier("removeAuthenticationCacheService")

@@ -1693,3 +1693,6 @@
 2020-07-13 03:23:55,385 INFO com.github.enesusta.sahaf.SahafApplication [restartedMain] Started SahafApplication in 5.55 seconds (JVM running for 7.013)
 2020-07-13 03:23:59,014 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-2] GET request on /admin PATH
 2020-07-13 03:24:05,570 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-7] GET request on /admin PATH
+2020-07-13 03:26:19,913 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Starting AuthenticationControllerTest on DESKTOP-B3CNSC5 with PID 8200 (started by Enes in C:\Users\Enes\projects\mongo-project)
+2020-07-13 03:26:19,914 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] The following profiles are active: test
+2020-07-13 03:26:38,818 INFO com.github.enesusta.sahaf.authentication.AuthenticationControllerTest [main] Started AuthenticationControllerTest in 20.104 seconds (JVM running for 26.425)
