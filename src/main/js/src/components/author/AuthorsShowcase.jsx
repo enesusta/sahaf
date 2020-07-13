@@ -8,11 +8,11 @@ const AuthorsShowCase = ({author}) => {
         <AuthorsShowCaseWrapper>
             <li>
                 <Link to={`/author/${author['fullName']}`} >
-                    <AuthorsShowCaseButton>{author['fullName']}</AuthorsShowCaseButton>
+                    <AuthorsShowCaseButton>Isim: {author['fullName']}</AuthorsShowCaseButton>
                 </Link>
             </li>
-            <li>{author['literary']}</li>
-            <li>{author['birthday']}</li>
+            <li>Edebi Akım: {author['literary']}</li>
+            <li>Doğum Tarihi: {author['birthday']}</li>
         </AuthorsShowCaseWrapper>
     )
 };

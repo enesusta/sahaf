@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from "react-router-dom";
 
 const Wrapper = styled.section`
   display: flex;
@@ -17,17 +18,38 @@ const SelectorButton = styled.button`
   color: white;
   cursor: pointer;
   font-weight: 200;
+  text-decoration: none;
+  width: 100%;
 `;
 
-const ProfileSelector = ({handler}) => {
+const ProfileSelector = () => {
 
     return (
         <Wrapper>
-            <SelectorButton onClick={() => handler(1)}>Bilgilerim</SelectorButton>
-            <SelectorButton onClick={() => handler(2)}>Kitaplarım</SelectorButton>
-            <SelectorButton onClick={() => handler(3)}>Kitap Ekle</SelectorButton>
+            <Link to={`/profile`}>
+                <SelectorButton>
+                    Bilgilerim
+                </SelectorButton>
+            </Link>
+            <Link to={`/profile/books`}>
+                <SelectorButton>
+                    Kitaplarım
+                </SelectorButton>
+            </Link>
+            <Link to={`/profile/books/add`}>
+                <SelectorButton>
+                    Kitap Ekle
+                </SelectorButton>
+            </Link>
         </Wrapper>
     )
 };
 
 export default ProfileSelector;
+
+/*
+
+            <SelectorButton onClick={() => handler(1)}>Bilgilerim</SelectorButton>
+            <SelectorButton onClick={() => handler(2)}>Kitaplarım</SelectorButton>
+            <SelectorButton onClick={() => handler(3)}>Kitap Ekle</SelectorButton>
+ */

@@ -3,6 +3,8 @@ package com.github.enesusta.sahaf.authentication;
 import com.github.enesusta.spring.security.jwt.JsonWebTokenManager;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -62,4 +64,6 @@ public class AuthenticationFilter extends OncePerRequestFilter {
         filterChain.doFilter(httpServletRequest, httpServletResponse);
 
     }
+
+
 }

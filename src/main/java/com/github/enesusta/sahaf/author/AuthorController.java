@@ -8,12 +8,15 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Executor;
 import java.util.function.Supplier;
 
 @RestController
@@ -23,25 +26,31 @@ import java.util.function.Supplier;
 public class AuthorController {
 
     private final AuthorService authorService;
+    private final Executor executor;
 
     @GetMapping
     public final CompletableFuture<Author> findByName() {
         final User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         final Supplier<Author> authorSupplier = authorService.findByFullName(user.getUsername());
-        return CompletableFuture.supplyAsync(authorSupplier);
+        return CompletableFuture.supplyAsync(authorSupplier, executor);
     }
 
     @GetMapping("/search")
-    public final CompletableFuture<Author> findByNamePathQuery(@RequestParam String name) {
-        return CompletableFuture.supplyAsync(authorService.findByNamePathQuery(name));
+    public final CompletableFuture<AuthorDTO> findByNamePathQuery(@RequestParam String name) {
+        return CompletableFuture.supplyAsync(authorService.findByNamePathQuery(name), executor);
     }
 
     @GetMapping("/all")
     public final CompletableFuture<List<AuthorDTO>> getAll() throws AuthorNotFoundException {
-        List<AuthorDTO> list = authorService.getAll();
+        final List<AuthorDTO> list = authorService.getAll();
         log.info("size {}", list.size());
         if (list.size() == 0 || list == null) throw new AuthorNotFoundException();
-        return CompletableFuture.supplyAsync(() -> list);
+        return CompletableFuture.supplyAsync(() -> list, executor);
+    }
+
+    @PutMapping
+    public final CompletableFuture<Void> updateAuthor(@RequestBody Author author) {
+        return CompletableFuture.runAsync(() -> authorService.update(author), executor);
     }
 
 

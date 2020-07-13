@@ -24,7 +24,7 @@ export const AdminRoute = ({
                         {Auth.isAuth && localStorage.getItem('user') === 'enesusta' ?
                             <Component {...props} />
                             :
-                            <Li>Bu sayfayı görüntülemek için gerekli izinlere sahip değilsiniz.</Li>
+                            <Li>Bu sayfayı sadece sistem yöneticisi görüntüleyebilir.</Li>
                         }
                     </>
                 }

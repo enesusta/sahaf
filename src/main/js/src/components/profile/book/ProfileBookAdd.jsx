@@ -9,7 +9,7 @@ import {LoginButton} from '../../auth/styles/LoginStyles'
 import React, {useState} from "react";
 import axios from 'axios';
 import httpHeader from "../../../http/header";
-
+import {useHistory} from "react-router-dom";
 
 const initialObject = {
     author: `${localStorage.getItem('user')}`,
@@ -20,8 +20,9 @@ const initialObject = {
     price: ""
 }
 
-const ProfileBookAdd = ({handler}) => {
+const ProfileBookAdd = () => {
     const [book, setBook] = useState(initialObject);
+    const history = useHistory();
 
     const isbnHandler = e => {
         setBook({...book, isbn: e.target.value});
@@ -51,12 +52,12 @@ const ProfileBookAdd = ({handler}) => {
             .post(url, book, httpHeader)
             .then(res => {
                 console.log(res.data);
+                history.push('/profile/books');
             })
             .catch(err => {
                 console.log(err.response);
             });
 
-        handler(2);
     }
 
     return (
@@ -76,7 +77,6 @@ const ProfileBookAdd = ({handler}) => {
                 <ProfileTabInput onChange={pagesHandler}/>
             </ProfileTabForm>
             <LoginButton width={100} onClick={clickHandler}>Ekle</LoginButton>
-            {JSON.stringify(book)}
         </ProfileTabWrapper>
     )
 };

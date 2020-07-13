@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useParams} from 'react-router-dom';
 import {AuthorWrapper} from "./styles/AuthorStyles";
 import AuthorHeader from "./AuthorHeader";
@@ -9,27 +9,26 @@ import {Facebook} from "react-content-loader";
 const AuthorLoad = () => {
     return (
         <AuthorWrapper>
-            <Facebook />
+            <Facebook/>
         </AuthorWrapper>
     )
 }
 
 const Author = () => {
     const {username} = useParams();
-    const { data, isLoading, error } = useAuthFetch(`/author/search?name=${username}`);
+    const {data, isLoading, error} = useAuthFetch(`/author/search?name=${username}`);
 
-    if (isLoading || error) {
-        return <AuthorLoad />
+    if (isLoading) {
+        return <AuthorLoad/>
     }
 
     return (
         <AuthorWrapper>
-            { error }
             <AuthorHeader name={username} date={data['createdDate']}/>
-            <AuthorBook/>
+            <AuthorBook books={data.books}/>
         </AuthorWrapper>
-    )
+    );
 
-}
+};
 
 export default Author;

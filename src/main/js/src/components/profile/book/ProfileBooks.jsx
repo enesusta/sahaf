@@ -37,7 +37,7 @@ const ProfileBooks = () => {
             <ProfileTabHeader>Kitaplarım</ProfileTabHeader>
             {
                 data ? data.map((e, i) => {
-                    return <ProfileBook key={i} bookProp={e}/>
+                    return <ProfileBook update='Güncelle' del="Sil" key={i} bookProp={e}/>
                 }) : null
             }
         </ProfileBooksWrapper>

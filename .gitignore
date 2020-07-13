@@ -31,6 +31,8 @@ build/
 .vscode/
 
 src/main/resources/.env
+src/main/resources/application.yml
+
 
 ### Frontend ###
 src/main/js/node_modules
