@@ -1626,3 +1626,31 @@
 2020-07-13 02:24:59,711 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-2] GET request on /admin PATH
 2020-07-13 02:25:07,402 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-6] GET request on /admin PATH
 2020-07-13 02:25:17,406 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-8] GET request on /admin PATH
+2020-07-13 02:36:58,119 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-2] GET request on /admin PATH
+2020-07-13 02:37:08,490 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-6] GET request on /admin PATH
+2020-07-13 02:38:12,620 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-9] GET request on /admin PATH
+2020-07-13 02:38:42,988 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-2] GET request on /admin PATH
+2020-07-13 02:39:03,900 INFO com.github.enesusta.sahaf.book.service.DefaultBookService [pool-1-thread-4] burada
+2020-07-13 02:39:03,901 INFO com.github.enesusta.sahaf.book.service.DefaultBookService [pool-1-thread-4] Accepted request Book(author=testuser1, isbn=994646ac-1ed6-4500-891f-1d5bd8c65400, title=Lafonten masallari2, language=EN, price=50 TL, pages=25, createdDate=Sun Jul 12 18:01:20 EET 2020)
+2020-07-13 02:39:07,263 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-8] GET request on /admin PATH
+2020-07-13 02:39:19,305 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-1] GET request on /admin PATH
+2020-07-13 02:39:25,090 INFO com.github.enesusta.sahaf.book.service.DefaultBookService [pool-1-thread-1] burada
+2020-07-13 02:39:25,091 INFO com.github.enesusta.sahaf.book.service.DefaultBookService [pool-1-thread-1] Accepted request Book(author=testuser1, isbn=994646ac-1ed6-4500-891f-1d5bd8c65400, title=Lafonten masallari3, language=FR, price=50 TL, pages=25, createdDate=Sun Jul 12 18:01:20 EET 2020)
+2020-07-13 02:39:25,775 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-7] GET request on /admin PATH
+2020-07-13 02:41:11,251 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-1] GET request on /admin PATH
+2020-07-13 02:41:29,338 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-3] GET request on /admin PATH
+2020-07-13 02:41:33,243 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-5] GET request on /admin PATH
+2020-07-13 02:42:00,400 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-9] GET request on /admin PATH
+2020-07-13 02:43:06,032 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-4] GET request on /admin PATH
+2020-07-13 02:44:02,784 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-5] GET request on /admin PATH
+2020-07-13 02:44:21,318 INFO com.github.enesusta.sahaf.book.service.DefaultBookService [pool-1-thread-3] burada
+2020-07-13 02:44:21,319 INFO com.github.enesusta.sahaf.book.service.DefaultBookService [pool-1-thread-3] Accepted request Book(author=enesusta, isbn=f33592ce-e4c7-49b0-9a40-a463e1967a71, title=Binbir gece masallari2, language=FR, price=130TL, pages=343, createdDate=Sun Jul 12 01:02:25 EET 2020)
+2020-07-13 02:44:22,046 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-2] GET request on /admin PATH
+2020-07-13 02:46:24,788 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-5] GET request on /admin PATH
+2020-07-13 02:46:55,427 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-9] GET request on /admin PATH
+2020-07-13 02:47:54,988 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-2] GET request on /admin PATH
+2020-07-13 02:50:34,945 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-5] GET request on /admin PATH
+2020-07-13 02:52:35,098 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-10] GET request on /admin PATH
+2020-07-13 02:53:11,313 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-4] GET request on /admin PATH
+2020-07-13 02:53:27,213 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-5] GET request on /admin PATH
+2020-07-13 02:56:18,885 INFO com.github.enesusta.sahaf.admin.AdminController [http-nio-8080-exec-10] GET request on /admin PATH

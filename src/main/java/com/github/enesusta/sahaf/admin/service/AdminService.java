@@ -6,5 +6,6 @@ import java.util.Set;
 
 public interface AdminService {
     void deleteAuthor(String name);
+    void updateAuthor(Author author);
     Set<Author> getAll();
 }

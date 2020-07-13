@@ -66,7 +66,6 @@ public class DefaultBookService implements BookService {
         boolean isUpdated = false;
         boolean isAdded = false;
 
-        log.info("burada");
         log.info("Accepted request {}", book.toString());
 
         final Query findByNameQuery = Query.query(Criteria.where("fullName").is(book.getAuthor()));

@@ -44,7 +44,6 @@ const ProfileBook = ({bookProp, who, update, del}) => {
 
     const updateHandler = e => {
 
-        e.preventDefault();
 
         if (window.confirm('Ilgili kayıt güncellenecektir , onaylıyor musunuz?')) {
             const url = `${process.env.REACT_APP_API}/book`;

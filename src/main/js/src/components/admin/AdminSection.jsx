@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
     ProfileTabForm,
     ProfileTabInput,
@@ -18,18 +18,23 @@ const AdminSectionWrapper = styled.section`
 
 
 const AdminSection = ({user}) => {
+    const [roles, setRoles] = useState(null);
+    const [literary, setLiterary] = useState(null);
+    const [birthday, setBirthday] = useState(null);
 
-    const titleHandler = e => {
+    const rolesHandler = e => {
+        const temp = e.target.value;
+        setRoles(temp.split(','));
     };
 
-    const languageHandler = e => {
+    const literaryHandler = e => {
+        setLiterary(e.target.value);
     };
 
-    const pagesHandler = e => {
+    const birthdayHandler = e => {
+        setBirthday(e.target.value);
     };
 
-    const priceHandler = e => {
-    }
 
     const updateHandler = e => {
 
@@ -71,6 +76,27 @@ const AdminSection = ({user}) => {
         }
     }
 
+    const userUpdateHandler = e => {
+
+        e.preventDefault();
+
+        let rolesData = roles ? roles : user.roles;
+        let literaryData = literary ? literary : user.literary;
+        let birthdayData = birthday ? birthday : user.birthday;
+
+        if (window.confirm('Kullanıcı bilgileri güncellenecektir. Onaylıyor musunuz?')) {
+
+            const body = {
+                fullName: user.fullName,
+                roles: rolesData,
+                literary: literaryData,
+                birthday: birthdayData
+            }
+
+            console.log(body);
+        }
+    }
+
     return (
         <AdminSectionWrapper>
             <ProfileTabForm>
@@ -78,27 +104,28 @@ const AdminSection = ({user}) => {
                 <ProfileTabInput defaultValue={user.fullName} readOnly/>
                 <ProfileTabLabel>Rolleri</ProfileTabLabel>
                 <ProfileTabInput
-                    defaultValue={user.roles.join(", ")}
-                    onChange={titleHandler}/>
+                    defaultValue={user.roles.join(",")}
+                    onChange={rolesHandler}/>
 
                 <ProfileTabLabel>Edebi Akım</ProfileTabLabel>
-                <ProfileTabInput defaultValue={user.literary} />
+                <ProfileTabInput defaultValue={user.literary} onChange={literaryHandler}/>
 
                 <ProfileTabLabel>Doğum Tarihi</ProfileTabLabel>
-                <ProfileTabInput defaultValue={user.birthday} />
+                <ProfileTabInput defaultValue={user.birthday} onChange={birthdayHandler}/>
 
                 <ProfileTabLabel>Kayıt Tarihi</ProfileTabLabel>
-                <ProfileTabInput defaultValue={user.createdDate.substr(0,19)} />
+                <ProfileTabInput defaultValue={user.createdDate.substr(0, 19)} readOnly/>
 
                 {
-                    user.books ? user.books.map((e,i) => {
+                    user.books ? user.books.map((e, i) => {
                         return <React.Fragment key={i}>
-                            <ProfileBook bookProp={e} who={user.fullName} update="Kitap Güncelle" del='Kitap Sil' />
+                            <ProfileBook bookProp={e} who={user.fullName} update="Kitap Güncelle" del='Kitap Sil'/>
                         </React.Fragment>
                     }) : null
                 }
 
-                <Button width={100} color='#afe34f' hov='#c7ec83' onClick={updateHandler}>Kullanıcı Bilgilerini Güncelle</Button>
+                <Button width={100} color='#afe34f' hov='#c7ec83' onClick={userUpdateHandler}>Kullanıcı Bilgilerini
+                    Güncelle</Button>
                 <Button width={100} color='#ff475a' hov='#ff8591' onClick={deleteHandler}>Kullanıcıyı Sil</Button>
             </ProfileTabForm>
         </AdminSectionWrapper>
